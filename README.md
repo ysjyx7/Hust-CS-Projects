@@ -1,1 +1,2 @@
-# Hust-Projects
+# Main Content
+some experiments & homework in HUST-CS
