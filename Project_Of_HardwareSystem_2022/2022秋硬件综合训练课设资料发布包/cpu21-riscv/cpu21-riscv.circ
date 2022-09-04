@@ -12144,7 +12144,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(1040,750)" to="(1040,860)"/>
     <wire from="(1060,700)" to="(1060,780)"/>
     <wire from="(1040,750)" to="(1080,750)"/>
-    <wire from="(1080,760)" to="(1080,790)"/>
     <wire from="(1110,760)" to="(1120,760)"/>
     <wire from="(1120,760)" to="(1120,800)"/>
     <wire from="(1460,810)" to="(1460,890)"/>
@@ -12161,6 +12160,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(1430,850)" to="(1430,870)"/>
     <wire from="(1430,850)" to="(1500,850)"/>
     <wire from="(1000,10)" to="(1000,160)"/>
+    <wire from="(1080,760)" to="(1080,790)"/>
     <wire from="(1000,10)" to="(1000,160)"/>
     <comp lib="0" loc="(270,220)" name="Splitter">
       <a name="facing" val="east"/>
@@ -15533,7 +15533,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(1420,560)" to="(1420,580)"/>
     <wire from="(550,810)" to="(550,820)"/>
     <wire from="(730,520)" to="(1050,520)"/>
-    <wire from="(1080,860)" to="(1080,890)"/>
     <wire from="(1220,740)" to="(1220,870)"/>
     <wire from="(1850,1020)" to="(1850,1140)"/>
     <wire from="(500,870)" to="(520,870)"/>
@@ -16045,7 +16044,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(630,1010)" to="(630,1060)"/>
     <wire from="(660,1010)" to="(660,1060)"/>
     <wire from="(650,1010)" to="(660,1010)"/>
-    <wire from="(1110,840)" to="(1160,840)"/>
     <wire from="(1530,1050)" to="(1540,1050)"/>
     <wire from="(1530,1010)" to="(1530,1050)"/>
     <wire from="(2020,1120)" to="(2020,1150)"/>
@@ -16058,7 +16056,9 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(220,1150)" to="(230,1150)"/>
     <wire from="(240,1120)" to="(250,1120)"/>
     <wire from="(240,1120)" to="(240,1170)"/>
+    <wire from="(1080,860)" to="(1080,890)"/>
     <wire from="(10,170)" to="(520,170)"/>
+    <wire from="(1110,840)" to="(1150,840)"/>
     <wire from="(10,170)" to="(520,170)"/>
     <comp lib="0" loc="(1030,100)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -16285,6 +16285,12 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelcolor" val="#000000"/>
       <a name="negate0" val="false"/>
       <a name="negate1" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1150,840)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="1"/>
+      <a name="label" val="halt"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
     </comp>
     <comp lib="0" loc="(590,1050)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -18128,12 +18134,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="label" val="AluOP"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
-    <comp lib="0" loc="(1160,840)" name="Tunnel">
-      <a name="facing" val="west"/>
-      <a name="width" val="1"/>
-      <a name="label" val="halt"/>
-      <a name="labelfont" val="SansSerif plain 10"/>
-    </comp>
     <comp lib="0" loc="(710,900)" name="Splitter">
       <a name="facing" val="east"/>
       <a name="fanout" val="1"/>
@@ -18444,7 +18444,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <comp lib="0" loc="(870,280)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="13"/>
-      <a name="value" val="0x13"/>
+      <a name="value" val="0x11a"/>
     </comp>
     <comp lib="8" loc="(440,260)" name="RiscV Probe"/>
     <comp lib="5" loc="(50,50)" name="Button">
@@ -23818,8 +23818,7 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <circ-port height="10" pin="820,1610" width="10" x="75" y="285"/>
       <circ-port height="10" pin="820,1730" width="10" x="75" y="305"/>
       <circ-port height="10" pin="820,1840" width="10" x="75" y="325"/>
-      <circ-port height="8" pin="630,2360" width="8" x="46" y="346"/>
-      <circ-port height="8" pin="720,2360" width="8" x="76" y="346"/>
+      <circ-port height="8" pin="630,2410" width="8" x="46" y="346"/>
       <circ-port height="8" pin="500,680" width="8" x="46" y="116"/>
       <circ-port height="10" pin="820,690" width="10" x="75" y="115"/>
       <circ-port height="8" pin="500,620" width="8" x="46" y="196"/>
@@ -23832,6 +23831,7 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <circ-port height="10" pin="820,2090" width="10" x="75" y="355"/>
       <circ-port height="8" pin="500,2180" width="8" x="46" y="366"/>
       <circ-port height="10" pin="820,2190" width="10" x="75" y="365"/>
+      <circ-port height="8" pin="720,2360" width="8" x="76" y="346"/>
       <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
     </appear>
     <wire from="(770,1730)" to="(820,1730)"/>
@@ -24008,10 +24008,6 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
     <wire from="(650,2020)" to="(750,2020)"/>
     <wire from="(650,1880)" to="(650,2020)"/>
     <wire from="(520,1910)" to="(520,1990)"/>
-    <wire from="(720,2300)" to="(750,2300)"/>
-    <wire from="(590,2330)" to="(630,2330)"/>
-    <wire from="(630,2330)" to="(630,2360)"/>
-    <wire from="(720,2300)" to="(720,2320)"/>
     <wire from="(720,2340)" to="(720,2360)"/>
     <wire from="(650,2360)" to="(660,2360)"/>
     <wire from="(650,2340)" to="(660,2340)"/>
@@ -24055,7 +24051,6 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
     <wire from="(650,830)" to="(750,830)"/>
     <wire from="(650,830)" to="(650,880)"/>
     <wire from="(650,780)" to="(650,830)"/>
-    <wire from="(650,780)" to="(740,780)"/>
     <wire from="(650,710)" to="(750,710)"/>
     <wire from="(650,710)" to="(650,780)"/>
     <wire from="(650,650)" to="(650,710)"/>
@@ -24071,13 +24066,26 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
     <wire from="(720,2200)" to="(740,2200)"/>
     <wire from="(580,2190)" to="(740,2190)"/>
     <wire from="(520,2200)" to="(550,2200)"/>
-    <wire from="(630,2210)" to="(630,2330)"/>
     <wire from="(630,2110)" to="(630,2210)"/>
     <wire from="(650,2140)" to="(650,2240)"/>
     <wire from="(650,2240)" to="(650,2340)"/>
     <wire from="(720,2100)" to="(720,2200)"/>
-    <wire from="(720,2200)" to="(720,2300)"/>
     <wire from="(520,2100)" to="(520,2200)"/>
+    <wire from="(700,2340)" to="(720,2340)"/>
+    <wire from="(630,2400)" to="(630,2410)"/>
+    <wire from="(620,2360)" to="(620,2400)"/>
+    <wire from="(620,2360)" to="(630,2360)"/>
+    <wire from="(620,2400)" to="(630,2400)"/>
+    <wire from="(630,2400)" to="(680,2400)"/>
+    <wire from="(680,2340)" to="(680,2400)"/>
+    <wire from="(680,2400)" to="(810,2400)"/>
+    <wire from="(810,2310)" to="(810,2400)"/>
+    <wire from="(710,2300)" to="(710,2310)"/>
+    <wire from="(710,2310)" to="(810,2310)"/>
+    <wire from="(700,2270)" to="(720,2270)"/>
+    <wire from="(720,2200)" to="(720,2270)"/>
+    <wire from="(630,2210)" to="(630,2360)"/>
+    <wire from="(650,780)" to="(750,780)"/>
     <comp lib="0" loc="(820,1730)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -24123,10 +24131,6 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
       <a name="Select" val="low"/>
-    </comp>
-    <comp lib="0" loc="(750,2300)" name="Pull Resistor">
-      <a name="facing" val="west"/>
-      <a name="pull" val="0"/>
     </comp>
     <comp lib="0" loc="(500,1110)" name="Pin">
       <a name="facing" val="east"/>
@@ -24321,17 +24325,6 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <a name="pull" val="none"/>
       <a name="label" val="IRout"/>
       <a name="labelloc" val="east"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="0" loc="(630,2360)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="false"/>
-      <a name="width" val="1"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="none"/>
-      <a name="label" val="同步清零，气泡，高电平有效"/>
-      <a name="labelloc" val="west"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
@@ -24596,10 +24589,6 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="0" loc="(590,2330)" name="Pull Resistor">
-      <a name="facing" val="east"/>
-      <a name="pull" val="0"/>
-    </comp>
     <comp lib="0" loc="(820,1010)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -24675,9 +24664,32 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="0" loc="(630,2410)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="false"/>
+      <a name="width" val="1"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="none"/>
+      <a name="label" val="同步清零，气泡，高电平有效"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
     <comp lib="0" loc="(520,1360)" name="Ground">
       <a name="facing" val="south"/>
       <a name="width" val="1"/>
+    </comp>
+    <comp lib="1" loc="(700,2270)" name="OR Gate">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="out" val="01"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="false"/>
+      <a name="negate1" val="false"/>
     </comp>
     <comp lib="0" loc="(520,920)" name="Ground">
       <a name="facing" val="south"/>
@@ -24710,6 +24722,17 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <a name="labelcolor" val="#000000"/>
       <a name="Select" val="low"/>
     </comp>
+    <comp lib="0" loc="(720,2360)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="false"/>
+      <a name="width" val="1"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="none"/>
+      <a name="label" val="Stall"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
     <comp lib="0" loc="(520,1180)" name="Ground">
       <a name="facing" val="south"/>
       <a name="width" val="1"/>
@@ -24721,26 +24744,6 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
       <a name="Select" val="low"/>
-    </comp>
-    <comp lib="0" loc="(720,2360)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="false"/>
-      <a name="width" val="1"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="none"/>
-      <a name="label" val="使能端，低电平有效，stall，高电平有效"/>
-      <a name="labelloc" val="east"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="1" loc="(720,2320)" name="NOT Gate">
-      <a name="facing" val="north"/>
-      <a name="width" val="1"/>
-      <a name="size" val="20"/>
-      <a name="out" val="01"/>
-      <a name="label" val=""/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
     </comp>
     <comp lib="0" loc="(820,960)" name="Pin">
       <a name="facing" val="west"/>
@@ -25027,6 +25030,18 @@ ff100493 900533 2200893 73 148493 fe9068e3 900533 2200893
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="1" loc="(690,2300)" name="AND Gate">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="out" val="01"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
     </comp>
     <comp lib="0" loc="(520,1300)" name="Ground">
       <a name="facing" val="south"/>
