@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep  8 04:02:50 2022
+# Process ID: 4644
+# Current directory: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/xsim.dir/RegFile_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/xsim.dir/RegFile_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/xsim.dir/RegFile_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Sep  8 04:02:53 2022. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep  8 04:02:53 2022...

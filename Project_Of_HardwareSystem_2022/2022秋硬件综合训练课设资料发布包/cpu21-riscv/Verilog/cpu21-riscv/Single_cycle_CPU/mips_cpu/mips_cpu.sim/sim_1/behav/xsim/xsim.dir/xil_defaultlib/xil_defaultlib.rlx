@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/RegFile.v,1662579857,verilog,,,,RegFile,,,,,,,,
+D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_sb.v,1662579857,verilog,,D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/RegFile.v,,REGISTER_FLIP_FLOP_sb,,,,,,,,
+D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Demultiplexer_32.v,1662580407,verilog,,D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_32.v,,Demultiplexer_32,,,,,,,,
+D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_32.v,1662579857,verilog,,D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_sb.v,,Multiplexer_bus_32,,,,,,,,

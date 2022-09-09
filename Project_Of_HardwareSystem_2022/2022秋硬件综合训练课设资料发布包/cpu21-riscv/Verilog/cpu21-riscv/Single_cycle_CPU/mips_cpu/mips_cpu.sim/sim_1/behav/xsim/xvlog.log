@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Demultiplexer_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Demultiplexer_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_sb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_sb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep  8 18:53:45 2022
+# Process ID: 11584
+# Current directory: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9028 D:\HustProjects\Project_Of_HardwareSystem_2022\2022秋硬件综合训练课设资料发布包\cpu21-riscv\Verilog\cpu21-riscv\Single_cycle_CPU\mips_cpu\mips_cpu.xpr
+# Log file: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/vivado.log
+# Journal file: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.539 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep  8 18:54:58 2022] Launched synth_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Thu Sep  8 18:54:58 2022] Launched impl_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep  8 18:56:28 2022] Launched synth_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Thu Sep  8 18:56:28 2022] Launched impl_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep  8 18:58:23 2022] Launched synth_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Thu Sep  8 18:58:23 2022] Launched impl_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep  8 19:03:45 2022] Launched synth_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Thu Sep  8 19:03:45 2022] Launched impl_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep  8 19:04:24 2022] Launched synth_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Thu Sep  8 19:04:24 2022] Launched impl_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep  8 19:08:13 2022] Launched synth_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Thu Sep  8 19:08:13 2022] Launched impl_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep  8 19:09:23 2022] Launched synth_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Thu Sep  8 19:09:23 2022] Launched impl_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6 -scripts_only
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Sep  8 19:17:17 2022] Launched synth_1...
+Run output will be captured here: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  8 19:23:43 2022...
