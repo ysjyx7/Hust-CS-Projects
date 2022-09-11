@@ -43,7 +43,10 @@ module REGISTER_FLIP_FLOP_sb( Clock,
     ***************************************************************************/
    reg[NrOfBits-1:0] s_state_reg;
    reg[NrOfBits-1:0] s_state_reg_neg_edge;
-
+initial
+begin
+s_state_reg=0;
+end
    assign Q = cs? {NrOfBits{1'bz}} : ((ActiveLevel) ? s_state_reg : s_state_reg_neg_edge);
 
    always @(posedge Clock or posedge Reset or posedge pre)

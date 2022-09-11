@@ -17,6 +17,7 @@ module RegFile( CLK,
 
    /***************************************************************************
     ** Here the inputs are defined                                           **
+    ** Here the inputs are defined                                           **
     ***************************************************************************/
    input  CLK;
    input[31:0]  Din;
@@ -178,8 +179,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_12[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -189,8 +190,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_44[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -200,8 +201,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_63[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -211,8 +212,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_26[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -222,8 +223,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_8[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -233,8 +234,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_2[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -244,8 +245,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_59[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -255,8 +256,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_27[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    Multiplexer_bus_32 #(.NrOfBits(32))
       MUX_1 (.Enable(1'b1),
@@ -303,8 +304,8 @@ module RegFile( CLK,
                        .Q(s_LOGISIM_BUS_34[31:0]),
                        .Reset(1'b0),
                        .Tick(1'b1),
-                       .cs(1'b1),
-                       .pre(1'b1));
+                       .cs(1'b0),
+                       .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -314,8 +315,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_43[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -325,8 +326,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_19[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -336,8 +337,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_65[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -347,8 +348,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_10[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -358,8 +359,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_1[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -369,8 +370,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_23[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -380,8 +381,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_50[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -391,8 +392,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_40[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -402,8 +403,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_69[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -413,8 +414,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_11[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -424,8 +425,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_31[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -435,8 +436,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_18[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -446,8 +447,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_46[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -457,8 +458,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_16[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    Multiplexer_bus_32 #(.NrOfBits(32))
       MUX_2 (.Enable(1'b1),
@@ -505,8 +506,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_14[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -516,8 +517,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_45[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -527,8 +528,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_13[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -538,8 +539,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_41[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -549,8 +550,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_55[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -560,8 +561,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_47[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -571,8 +572,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_48[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -582,8 +583,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_33[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
    REGISTER_FLIP_FLOP_sb #(.ActiveLevel(1),
                            .NrOfBits(32))
@@ -593,8 +594,8 @@ module RegFile( CLK,
                         .Q(s_LOGISIM_BUS_64[31:0]),
                         .Reset(1'b0),
                         .Tick(1'b1),
-                        .cs(1'b1),
-                        .pre(1'b1));
+                        .cs(1'b0),
+                        .pre(1'b0));
 
 
 

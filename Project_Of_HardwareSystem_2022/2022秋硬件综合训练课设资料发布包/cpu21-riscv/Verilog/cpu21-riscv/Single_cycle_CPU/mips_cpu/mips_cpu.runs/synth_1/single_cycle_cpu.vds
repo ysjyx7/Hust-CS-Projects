@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Sep  8 19:25:45 2022
-# Process ID: 15084
+# Start of session at: Thu Sep  8 17:51:18 2022
+# Process ID: 14708
 # Current directory: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1
 # Command line: vivado.exe -log single_cycle_cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_cpu.tcl
 # Log file: D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.runs/synth_1/single_cycle_cpu.vds
@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9372
+INFO: [Synth 8-7075] Helper process launched with PID 11068
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.945 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.676 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'single_cycle_cpu' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle_cpu.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
@@ -115,7 +115,7 @@ WARNING: [Synth 8-689] width (12) of port connection 'MuxOut' does not match por
 INFO: [Synth 8-6157] synthesizing module 'Bit_Extender_12_32_SIGN' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/wiring/Bit_Extender_12_32_SIGN.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'Bit_Extender_12_32_SIGN' (24#1) [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/wiring/Bit_Extender_12_32_SIGN.v:9]
 WARNING: [Synth 8-689] width (32) of port connection 'MuxIn_0' does not match port width (1) of module 'Multiplexer_bus_2' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle_cpu.v:52]
-WARNING: [Synth 8-689] width (32) of port connection 'Sel' does not match port width (1) of module 'Multiplexer_bus_2' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle_cpu.v:52]
+WARNING: [Synth 8-689] width (32) of port connection 'MuxIn_1' does not match port width (1) of module 'Multiplexer_bus_2' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle_cpu.v:52]
 WARNING: [Synth 8-689] width (32) of port connection 'MuxOut' does not match port width (1) of module 'Multiplexer_bus_2' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle_cpu.v:52]
 INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/ALU.v:9]
 INFO: [Synth 8-6157] synthesizing module 'Shifter_32_bit' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v:9]
@@ -222,4 +222,14 @@ WARNING: [Synth 8-567] referenced signal 'y5' should be on the sensitivity list 
 WARNING: [Synth 8-567] referenced signal 'y6' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/display.v:35]
 WARNING: [Synth 8-567] referenced signal 'y7' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/display.v:35]
 INFO: [Synth 8-6155] done synthesizing module 'display' (50#1) [D:/QQ/QQmsg/2849458605/FileRecv/display.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'single_cycle_cpu' (51#1) [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle_cpu.v:23]
+ERROR: [Synth 8-685] variable 'AN' should not be used in output port connection [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle_cpu.v:73]
+ERROR: [Synth 8-6156] failed synthesizing module 'single_cycle_cpu' [D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle_cpu.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+115 Infos, 47 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  8 17:51:35 2022...

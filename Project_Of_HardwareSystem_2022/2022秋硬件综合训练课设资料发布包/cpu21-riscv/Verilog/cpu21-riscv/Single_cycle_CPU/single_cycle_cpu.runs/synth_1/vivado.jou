@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 11 12:38:20 2022
+# Process ID: 2356
+# Current directory: D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/synth_1
+# Command line: vivado.exe -log single_cycle_cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_cpu.tcl
+# Log file: D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/synth_1/single_cycle_cpu.vds
+# Journal file: D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source single_cycle_cpu.tcl -notrace

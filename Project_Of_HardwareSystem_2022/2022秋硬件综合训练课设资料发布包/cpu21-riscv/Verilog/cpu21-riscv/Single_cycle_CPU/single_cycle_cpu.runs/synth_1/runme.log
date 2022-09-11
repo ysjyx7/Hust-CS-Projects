@@ -1,0 +1,550 @@
+
+*** Running vivado
+    with args -log single_cycle_cpu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_cpu.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source single_cycle_cpu.tcl -notrace
+Command: synth_design -top single_cycle_cpu -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17148
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_cycle_cpu' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/single_cycle_cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2' (1#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_PC' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_PC.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+	Parameter flag bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_PC' (2#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_PC.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ROM_ROM' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/ROM_ROM.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_ROM' (3#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/ROM_ROM.v:9]
+INFO: [Synth 8-6157] synthesizing module 'yingbuxian' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/yingbuxian.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE' (4#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE__parameterized0' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE__parameterized0' (4#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'help2' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/help2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'NOT_GATE' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'NOT_GATE' (5#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_7_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_7_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_7_INPUTS' (6#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_7_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_6_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_6_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_6_INPUTS' (7#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_6_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_8_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_8_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_8_INPUTS' (8#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_8_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_5_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_5_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_5_INPUTS' (9#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_5_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_10_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_10_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_10_INPUTS' (10#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_10_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_7_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_7_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_7_INPUTS' (11#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_7_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_9_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_9_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_9_INPUTS' (12#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_9_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_10_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_10_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_10_INPUTS' (13#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_10_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'help2' (14#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/help2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'help1' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/help1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_4_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_4_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_4_INPUTS' (15#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_8_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_8_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_8_INPUTS' (16#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_8_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_11_INPUTS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_11_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_11_INPUTS' (17#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_11_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'help1' (18#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/help1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yingbuxian' (19#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/yingbuxian.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2__parameterized0' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2__parameterized0' (19#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/RegFile.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Demultiplexer_32' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Demultiplexer_32.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Demultiplexer_32' (20#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Demultiplexer_32.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_sb' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_sb.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_sb' (21#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_sb.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_32' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_32.v:9]
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_32' (22#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_32.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (23#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/RegFile.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2__parameterized1' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2__parameterized1' (23#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Bit_Extender_12_32_SIGN' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_12_32_SIGN.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Bit_Extender_12_32_SIGN' (24#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_12_32_SIGN.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/ALU.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Shifter_32_bit' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v:9]
+	Parameter ShifterMode bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shifter_32_bit' (25#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Shifter_32_bit__parameterized0' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v:9]
+	Parameter ShifterMode bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shifter_32_bit__parameterized0' (25#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_16' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_16.v:9]
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_16' (26#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_16.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Comparator.v:9]
+	Parameter TwosComplement bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (27#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Comparator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'XOR_GATE_BUS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/XOR_GATE_BUS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'XOR_GATE_BUS' (28#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/XOR_GATE_BUS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'NOR_GATE_BUS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/NOR_GATE_BUS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'NOR_GATE_BUS' (29#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/NOR_GATE_BUS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_BUS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_BUS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_BUS' (30#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_BUS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Comparator__parameterized0' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Comparator.v:9]
+	Parameter TwosComplement bound to: 0 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator__parameterized0' (30#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Comparator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Subtractor' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Subtractor.v:9]
+	Parameter ExtendedBits bound to: 33 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Subtractor' (31#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Subtractor.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_BUS' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_BUS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_BUS' (32#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_BUS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_16' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_16.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_16' (33#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_16.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Adder.v:9]
+	Parameter ExtendedBits bound to: 33 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (34#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Adder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Shifter_32_bit__parameterized1' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v:9]
+	Parameter ShifterMode bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shifter_32_bit__parameterized1' (34#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (35#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/ALU.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Unsigned_cmp' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/Unsigned_cmp.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Unsigned_cmp' (36#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/Unsigned_cmp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bit_Extender_20_32_SIGN' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_20_32_SIGN.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Bit_Extender_20_32_SIGN' (37#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_20_32_SIGN.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Bit_Extender_2_5_SIGN' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_2_5_SIGN.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Bit_Extender_2_5_SIGN' (38#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_2_5_SIGN.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_4' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_4.v:9]
+	Parameter NrOfBits bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_4' (39#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2__parameterized2' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2__parameterized2' (39#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'MIPS_RAM' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/MIPS_RAM.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Decoder_16' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Decoder_16.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder_16' (40#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Decoder_16.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RAM_a3' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_a3' (41#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RAM_a2' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_a2' (42#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE' (43#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RAM_a1' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_a1' (44#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RAM_a4' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_a4' (45#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'MIPS_RAM' (46#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/MIPS_RAM.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 1 - type: integer 
+	Parameter flag bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP' (47#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP__parameterized0' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+	Parameter flag bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP__parameterized0' (47#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'display' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:23]
+WARNING: [Synth 8-567] referenced signal 'y0' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:40]
+WARNING: [Synth 8-567] referenced signal 'y1' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:40]
+WARNING: [Synth 8-567] referenced signal 'y2' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:40]
+WARNING: [Synth 8-567] referenced signal 'y3' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:40]
+WARNING: [Synth 8-567] referenced signal 'y4' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:40]
+WARNING: [Synth 8-567] referenced signal 'y5' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:40]
+WARNING: [Synth 8-567] referenced signal 'y6' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:40]
+WARNING: [Synth 8-567] referenced signal 'y7' should be on the sensitivity list [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'display' (48#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_cycle_cpu' (49#1) [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/single_cycle_cpu.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1017.727 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/xdc/LogisimToplevelShell.xdc]
+Finished Parsing XDC File [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/xdc/LogisimToplevelShell.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/xdc/LogisimToplevelShell.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/single_cycle_cpu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/single_cycle_cpu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1079.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1079.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1079.414 ; gain = 61.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1079.414 ; gain = 61.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1079.414 ; gain = 61.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1079.414 ; gain = 61.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_9'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_11'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_12'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_18'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_26'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_58'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_77'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_80'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_90'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_100'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_109'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_118'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_131'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_161'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_169'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_1' (NOT_GATE) to 'YBX1/help2_1/GATE_177'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_64'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_67'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_68'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_72'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_106'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_128'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_146'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_152'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_3' (NOT_GATE) to 'YBX1/help2_1/GATE_154'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_4' (NOT_GATE) to 'YBX1/help2_1/GATE_32'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_4' (NOT_GATE) to 'YBX1/help2_1/GATE_136'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_4' (NOT_GATE) to 'YBX1/help2_1/GATE_150'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_28'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_34'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_47'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_49'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_59'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_63'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_71'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_92'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_97'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_104'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_137'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_139'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_143'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_5' (NOT_GATE) to 'YBX1/help2_1/GATE_173'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_16'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_30'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_43'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_44'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_51'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_53'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_60'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_62'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_83'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_84'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_86'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_89'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_96'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_114'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_122'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_138'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_140'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_144'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_158'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_165'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_172'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_174'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_6' (NOT_GATE) to 'YBX1/help2_1/GATE_175'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_10'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_25'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_76'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_91'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_108'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_130'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_132'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_145'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_147'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_7' (NOT_GATE) to 'YBX1/help2_1/GATE_149'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_19'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_20'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_29'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_33'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_36'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_40'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_98'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_105'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_117'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_127'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_135'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_13' (NOT_GATE) to 'YBX1/help2_1/GATE_164'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_17'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_22'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_24'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_31'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_35'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_41'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_45'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_54'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_65'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_66'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_73'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_74'
+INFO: [Synth 8-223] decloning instance 'YBX1/help2_1/GATE_14' (NOT_GATE) to 'YBX1/help2_1/GATE_79'
+INFO: [Common 17-14] Message 'Synth 8-223' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   33 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
++---Registers : 
+	               32 Bit    Registers := 34    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 53    
+	 220 Input   32 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1079.414 ; gain = 61.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-----------------+-------------------+-----------+----------------------+---------------+
+|Module Name      | RTL Object        | Inference | Size (Depth x Width) | Primitives    | 
++-----------------+-------------------+-----------+----------------------+---------------+
+|single_cycle_cpu | RAM/RAM_3/mem_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
+|single_cycle_cpu | RAM/RAM_2/mem_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
+|single_cycle_cpu | RAM/RAM_1/mem_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
+|single_cycle_cpu | RAM/RAM_4/mem_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
++-----------------+-------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1079.414 ; gain = 61.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1079.414 ; gain = 61.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-----------------+-------------------+-----------+----------------------+---------------+
+|Module Name      | RTL Object        | Inference | Size (Depth x Width) | Primitives    | 
++-----------------+-------------------+-----------+----------------------+---------------+
+|single_cycle_cpu | RAM/RAM_3/mem_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
+|single_cycle_cpu | RAM/RAM_2/mem_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
+|single_cycle_cpu | RAM/RAM_1/mem_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
+|single_cycle_cpu | RAM/RAM_4/mem_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
++-----------------+-------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1118.109 ; gain = 100.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1132.891 ; gain = 115.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1132.891 ; gain = 115.164
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin less with 1st driver pin 's_state_reg[31]_i_14/O' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/ALU.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin less with 2nd driver pin 'UCMP/compare_flag0_carry__2/CO[3]' [D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE.v:42]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1132.891 ; gain = 115.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1132.891 ; gain = 115.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1132.891 ; gain = 115.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1132.891 ; gain = 115.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    63|
+|3     |LUT1     |     5|
+|4     |LUT2     |   216|
+|5     |LUT3     |   141|
+|6     |LUT4     |   275|
+|7     |LUT5     |   204|
+|8     |LUT6     |  1030|
+|9     |MUXF7    |   289|
+|10    |MUXF8    |    11|
+|11    |RAM32X1S |    32|
+|12    |FDRE     |  1059|
+|13    |IBUF     |     1|
+|14    |OBUF     |   323|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1132.891 ; gain = 115.164
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1132.891 ; gain = 53.477
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1132.891 ; gain = 115.164
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1132.891 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 395 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1132.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+230 Infos, 8 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1132.891 ; gain = 115.164
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/synth_1/single_cycle_cpu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file single_cycle_cpu_utilization_synth.rpt -pb single_cycle_cpu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 11 12:39:05 2022...

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../verilog/plexers/Demultiplexer_32.v" \
+"../../../../../verilog/plexers/Multiplexer_bus_32.v" \
+"../../../../../verilog/memory/REGISTER_FLIP_FLOP_sb.v" \
+"../../../../../verilog/circuit/RegFile.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

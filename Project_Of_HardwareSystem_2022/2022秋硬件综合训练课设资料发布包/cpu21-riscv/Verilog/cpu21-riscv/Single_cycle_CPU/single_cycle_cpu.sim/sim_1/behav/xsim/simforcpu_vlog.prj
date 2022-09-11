@@ -1,0 +1,58 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../verilog/circuit/ALU.v" \
+"../../../../verilog/gates/AND_GATE.v" \
+"../../../../verilog/gates/AND_GATE_10_INPUTS.v" \
+"../../../../verilog/gates/AND_GATE_5_INPUTS.v" \
+"../../../../verilog/gates/AND_GATE_6_INPUTS.v" \
+"../../../../verilog/gates/AND_GATE_7_INPUTS.v" \
+"../../../../verilog/gates/AND_GATE_8_INPUTS.v" \
+"../../../../verilog/gates/AND_GATE_9_INPUTS.v" \
+"../../../../verilog/gates/AND_GATE_BUS.v" \
+"../../../../verilog/arithmetic/Adder.v" \
+"../../../../verilog/wiring/Bit_Extender_12_32_SIGN.v" \
+"../../../../verilog/wiring/Bit_Extender_20_32_SIGN.v" \
+"../../../../verilog/wiring/Bit_Extender_2_5_SIGN.v" \
+"../../../../verilog/arithmetic/Comparator.v" \
+"../../../../verilog/plexers/Decoder_16.v" \
+"../../../../verilog/plexers/Demultiplexer_32.v" \
+"../../../../verilog/circuit/MIPS_RAM.v" \
+"../../../../verilog/plexers/Multiplexer_16.v" \
+"../../../../verilog/plexers/Multiplexer_bus_16.v" \
+"../../../../verilog/plexers/Multiplexer_bus_2.v" \
+"../../../../verilog/plexers/Multiplexer_bus_32.v" \
+"../../../../verilog/plexers/Multiplexer_bus_4.v" \
+"../../../../verilog/gates/NOR_GATE_BUS.v" \
+"../../../../verilog/gates/NOT_GATE.v" \
+"../../../../verilog/gates/OR_GATE.v" \
+"../../../../verilog/gates/OR_GATE_10_INPUTS.v" \
+"../../../../verilog/gates/OR_GATE_11_INPUTS.v" \
+"../../../../verilog/gates/OR_GATE_4_INPUTS.v" \
+"../../../../verilog/gates/OR_GATE_7_INPUTS.v" \
+"../../../../verilog/gates/OR_GATE_8_INPUTS.v" \
+"../../../../verilog/gates/OR_GATE_BUS.v" \
+"../../../../verilog/memory/RAM_a1.v" \
+"../../../../verilog/memory/RAM_a2.v" \
+"../../../../verilog/memory/RAM_a3.v" \
+"../../../../verilog/memory/RAM_a4.v" \
+"../../../../verilog/memory/REGISTER_FLIP_FLOP.v" \
+"../../../../verilog/memory/REGISTER_FLIP_FLOP_PC.v" \
+"../../../../verilog/memory/REGISTER_FLIP_FLOP_sb.v" \
+"../../../../verilog/memory/ROM_ROM.v" \
+"../../../../verilog/circuit/RegFile.v" \
+"../../../../verilog/arithmetic/Shifter_32_bit.v" \
+"../../../../verilog/arithmetic/Subtractor.v" \
+"../../../../single_cycle_cpu.srcs/sources_1/new/Unsigned_cmp.v" \
+"../../../../verilog/gates/XOR_GATE_BUS.v" \
+"../../../../mips_cpu/mips_cpu.srcs/sources_1/new/display.v" \
+"../../../../verilog/circuit/help1.v" \
+"../../../../verilog/circuit/help2.v" \
+"../../../../single_cycle_cpu.srcs/sources_1/new/single_cycle_cpu.v" \
+"../../../../verilog/circuit/yingbuxian.v" \
+"../../../../single_cycle_cpu.srcs/sim_1/new/simforcpu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

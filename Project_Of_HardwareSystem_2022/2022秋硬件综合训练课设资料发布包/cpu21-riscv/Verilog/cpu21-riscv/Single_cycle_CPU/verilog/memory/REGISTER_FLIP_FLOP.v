@@ -19,7 +19,8 @@ module REGISTER_FLIP_FLOP( Clock,
     ** Here all module parameters are defined with a dummy value             **
     ***************************************************************************/
    parameter ActiveLevel = 1;
-   parameter NrOfBits = 1;
+   parameter NrOfBits = 32;
+   parameter flag=1;
 
 
    /***************************************************************************
@@ -43,19 +44,22 @@ module REGISTER_FLIP_FLOP( Clock,
     ***************************************************************************/
    reg[NrOfBits-1:0] s_state_reg;
    reg[NrOfBits-1:0] s_state_reg_neg_edge;
-
+   initial
+   begin
+   s_state_reg=0;
+   end
    assign Q = cs? {NrOfBits{1'bz}} : ((ActiveLevel) ? s_state_reg : s_state_reg_neg_edge);
 
    always @(posedge Clock or posedge Reset or posedge pre)
    begin
-      if (Reset) s_state_reg <= 0;
+      if (Reset||(flag==0)) s_state_reg <= 0;
       else if(pre) s_state_reg <= {NrOfBits{1'b1}};
       else if (ClockEnable&Tick) s_state_reg <= D;
    end
 
    always @(negedge Clock or posedge Reset or posedge pre)
    begin
-      if (Reset) s_state_reg_neg_edge <= 0;
+      if (Reset||(flag==0)) s_state_reg_neg_edge <= 0;
       else if(pre) s_state_reg_neg_edge <= {NrOfBits{1'b1}};
       else if (ClockEnable&Tick) s_state_reg_neg_edge <= D;
    end

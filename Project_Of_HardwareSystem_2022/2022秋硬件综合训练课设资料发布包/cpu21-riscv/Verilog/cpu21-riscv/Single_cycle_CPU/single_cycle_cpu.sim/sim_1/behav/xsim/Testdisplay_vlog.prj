@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../mips_cpu/mips_cpu.srcs/sources_1/new/display.v" \
+"../../../../mips_cpu/mips_cpu.srcs/sources_1/new/divider.v" \
+"../../../../single_cycle_cpu.srcs/sim_1/new/Testdisplay.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
