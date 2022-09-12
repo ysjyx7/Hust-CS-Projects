@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../verilog/circuit/ALU.v" \
+"../../../../verilog/gates/AND_GATE_BUS.v" \
+"../../../../verilog/arithmetic/Adder.v" \
+"../../../../verilog/arithmetic/Comparator.v" \
+"../../../../verilog/plexers/Multiplexer_16.v" \
+"../../../../verilog/plexers/Multiplexer_bus_16.v" \
+"../../../../verilog/gates/NOR_GATE_BUS.v" \
+"../../../../verilog/gates/NOT_GATE.v" \
+"../../../../verilog/gates/OR_GATE_BUS.v" \
+"../../../../verilog/arithmetic/Shifter_32_bit.v" \
+"../../../../verilog/arithmetic/Subtractor.v" \
+"../../../../verilog/gates/XOR_GATE_BUS.v" \
+"../../../../single_cycle_cpu.srcs/sim_1/new/TestALU.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

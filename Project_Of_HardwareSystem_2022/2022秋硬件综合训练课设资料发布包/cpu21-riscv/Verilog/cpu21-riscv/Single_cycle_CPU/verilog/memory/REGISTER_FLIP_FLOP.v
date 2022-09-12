@@ -52,14 +52,14 @@ module REGISTER_FLIP_FLOP( Clock,
 
    always @(posedge Clock or posedge Reset or posedge pre)
    begin
-      if (Reset||(flag==0)) s_state_reg <= 0;
+      if (Reset) s_state_reg <= 0;
       else if(pre) s_state_reg <= {NrOfBits{1'b1}};
       else if (ClockEnable&Tick) s_state_reg <= D;
    end
 
    always @(negedge Clock or posedge Reset or posedge pre)
    begin
-      if (Reset||(flag==0)) s_state_reg_neg_edge <= 0;
+      if (Reset) s_state_reg_neg_edge <= 0;
       else if(pre) s_state_reg_neg_edge <= {NrOfBits{1'b1}};
       else if (ClockEnable&Tick) s_state_reg_neg_edge <= D;
    end

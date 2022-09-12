@@ -41,7 +41,7 @@ module Subtractor( BorrowIn,
    wire[NrOfBits-1:0] s_inverted_dataB;
    wire[ExtendedBits-1:0] s_sum_result;
 
-   assign   {s_carry,Result} = DataA + ~(DataB) + ~(BorrowIn);
+   assign   {s_carry,Result} = DataA + ~(DataB) + ~(BorrowIn)+2;
    assign   BorrowOut = ~s_carry;
 
 endmodule

@@ -1,4 +1,4 @@
-`timescale 1ns / 100ps
+`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -24,9 +24,11 @@ module simforcpu();
     reg clk,GO,rst;
     wire [7:0]SEG,AN;
     wire [31:0]leddata,PC,IR,R1Data;
-    wire [31:0]Result,RDin,MDin,jalrin,AluBin;
+  //  wire clk1khz;
+    wire [31:0]RDin,Result,jalrin,AluBin;
     wire [4:0]R2ch,r1ch,Wch;
-    wire JAL,JALR,ecall,RegWrite;
+    wire ecall,halt,rst,Beq,BLTU,equal,branch;
+    wire [3:0]AluOP;
     initial
     begin
         clk=0;
@@ -37,5 +39,6 @@ module simforcpu();
     begin 
         #5 clk=~clk;
     end
-    single_cycle_cpu cpu(clk,rst,GO,AN,SEG,leddata,PC,IR,R2ch,Result,RDin,JAL,JALR,MDin,R1Data,ecall,r1ch,RegWrite,jalrin,Wch,AluBin);    
+    single_cycle_cpu cpu(clk,rst,GO,AN,SEG,leddata,PC,IR,R1Data,ecall,R2ch,r1ch,Wch,RDin,jalrin,AluOP,Result,AluBin,halt,BLTU,equal,Beq,branch);
+   // ,PC,IR,R2ch,Result,RDin,JAL,JALR,MDin,R1Data,ecall,r1ch,RegWrite,jalrin,Wch,AluBin);    
 endmodule

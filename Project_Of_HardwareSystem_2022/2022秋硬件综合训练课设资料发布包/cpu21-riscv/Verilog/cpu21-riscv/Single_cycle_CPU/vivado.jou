@@ -2,34 +2,127 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Sep 11 10:26:04 2022
-# Process ID: 6444
+# Start of session at: Mon Sep 12 13:35:08 2022
+# Process ID: 7112
 # Current directory: D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3196 D:\QQ\QQmsg\2849458605\FileRecv\Single_cycle_CPU\single_cycle_cpu.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13400 D:\QQ\QQmsg\2849458605\FileRecv\Single_cycle_CPU\single_cycle_cpu.xpr
 # Log file: D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/vivado.log
 # Journal file: D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.xpr
 update_compile_order -fileset sources_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sim_1/new/TestALU.v w ]
+add_files -fileset sim_1 D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sim_1/new/TestALU.v
+update_compile_order -fileset sim_1
+launch_simulation
+source simforcpu.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TestALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+close_project
+open_project D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.xpr
 update_compile_order -fileset sources_1
 launch_simulation
+source TestALU.tcl
+close_sim
+launch_simulation
+source TestALU.tcl
+close_sim
+launch_simulation
+source TestALU.tcl
+close_sim
+launch_simulation
+source TestALU.tcl
+close_sim
+launch_simulation
+source TestALU.tcl
+close_sim
+launch_simulation
+source TestALU.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top simforcpu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
 launch_simulation
 source simforcpu.tcl
+run 10 us
+close_sim
+launch_simulation
+source simforcpu.tcl
+run 10 us
+close_sim
+launch_simulation
+source simforcpu.tcl
+run 10 us
+close_sim
+launch_simulation
+source simforcpu.tcl
+run 10 us
+close_sim
+launch_simulation
+source simforcpu.tcl
+run 10 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TestALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source TestALU.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top simforcpu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source simforcpu.tcl
+run 10 us
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
@@ -49,40 +142,57 @@ close_sim
 launch_simulation
 launch_simulation
 source simforcpu.tcl
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+close_sim
+launch_simulation
+launch_simulation
+source simforcpu.tcl
+run 10 us
 close_sim
 launch_simulation
 source simforcpu.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 100 us
 close_sim
 launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
 launch_simulation
 source simforcpu.tcl
 close_sim
@@ -94,21 +204,45 @@ source simforcpu.tcl
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
-close_sim
-reset_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
-close_sim
-launch_simulation
-source simforcpu.tcl
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

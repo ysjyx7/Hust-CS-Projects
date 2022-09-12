@@ -24,18 +24,19 @@ module display(clk,leddata,AN,SEG);
 input clk;
 input [31:0]leddata;
 output reg[7:0]AN,SEG;
+//output clk_1khz;
 wire [3:0]y7,y6,y5,y4,y3,y2,y1,y0;
 reg [3:0]y;
 assign {y7,y6,y5,y4,y3,y2,y1,y0}=leddata;
-//wire clk_1khz;
-//divider#(50_000) d1(clk,clk_1khz);
+wire clk_1khz;
+divider#(50) d1(clk,clk_1khz);
 reg [2:0]flag;
 initial 
 begin
 flag=0;
 y=0;
 end
-always@(posedge clk)
+always@(posedge clk_1khz)
     flag = (flag+1)%8;
 always@(flag)
 begin

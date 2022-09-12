@@ -13,19 +13,19 @@ module Shifter_32_bit( DataA,
    /***************************************************************************
     ** Here all module parameters are defined with a dummy value             **
     ***************************************************************************/
-   parameter ShifterMode = 1;
+   parameter ShifterMode = 3;
 
 
    /***************************************************************************
     ** Here the inputs are defined                                           **
     ***************************************************************************/
-   input[31:0]  DataA;
-   input[4:0]  ShiftAmount;
+   input signed[31:0]  DataA;
+   input signed[4:0]  ShiftAmount;
 
    /***************************************************************************
     ** Here the outputs are defined                                          **
     ***************************************************************************/
-   output reg [31:0] Result;
+   output reg signed [31:0] Result;
    /***************************************************************************
     ** ShifterMode represents when:                                          **
     ** 0 : Logical Shift Left                                                **
@@ -41,7 +41,7 @@ module Shifter_32_bit( DataA,
 	       0: Result = DataA << ShiftAmount;
 		   1: Result = DataA;
 		   2: Result = DataA >> ShiftAmount;
-		   3: Result = DataA <<< ShiftAmount;
+		   3: Result = DataA >>> ShiftAmount;
 		   4: Result = DataA;
 		   default: Result = DataA;
 	   endcase

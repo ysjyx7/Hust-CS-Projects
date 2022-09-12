@@ -132,6 +132,7 @@ read_verilog -library xil_defaultlib {
   D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/Unsigned_cmp.v
   D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/XOR_GATE_BUS.v
   D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/divider.v
   D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/help1.v
   D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/help2.v
   D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/yingbuxian.v
