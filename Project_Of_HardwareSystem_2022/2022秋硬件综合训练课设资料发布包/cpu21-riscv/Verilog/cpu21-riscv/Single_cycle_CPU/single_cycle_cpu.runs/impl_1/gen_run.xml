@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1662971595">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1662989828">
   <File Type="BITSTR-BMM" Name="single_cycle_cpu_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="single_cycle_cpu_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="single_cycle_cpu_timing_summary_init.rpt"/>
