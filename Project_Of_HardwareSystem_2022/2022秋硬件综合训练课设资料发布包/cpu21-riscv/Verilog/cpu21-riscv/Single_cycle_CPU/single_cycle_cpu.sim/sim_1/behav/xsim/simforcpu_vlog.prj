@@ -16,6 +16,7 @@ verilog xil_defaultlib  \
 "../../../../verilog/arithmetic/Comparator.v" \
 "../../../../verilog/plexers/Decoder_16.v" \
 "../../../../verilog/plexers/Demultiplexer_32.v" \
+"../../../../verilog/memory/LogisimCounter.v" \
 "../../../../verilog/circuit/MIPS_RAM.v" \
 "../../../../verilog/plexers/Multiplexer_16.v" \
 "../../../../verilog/plexers/Multiplexer_bus_16.v" \

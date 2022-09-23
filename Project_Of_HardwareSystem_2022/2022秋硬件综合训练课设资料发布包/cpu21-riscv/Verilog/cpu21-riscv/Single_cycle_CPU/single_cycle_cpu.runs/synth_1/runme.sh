@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.runs/synth_1'
+HD_PWD='D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

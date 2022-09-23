@@ -20,13 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module single_cycle_cpu(min,mid,max,clk_500M,rst,go,AN,SEG);
+module single_cycle_cpu(min,mid,max,mode1,mode2,mode3,clk_500M,rst,go,AN,SEG);
 //,ledData,PC,IR,R1Data,ecall,R2Ch,R1Ch,Wch,RDin,jalrin,AluOP,Result,AluBin,halt,BLTU,equal,Beq,branch);
 input clk_500M;
 input rst;
 input go;
 input min,mid,max;
+input mode1,mode2,mode3;
 output [7:0] AN,SEG;
+//output [3:0]sel;
+//output SB;
+//output [31:0]Din,Dout,ledData,PC,IR;
 //output [31:0] ledData,PC,IR,R1Data,RDin,jalrin,Result,AluBin;
 //output ecall;
 //output AluOP;
@@ -47,7 +51,11 @@ wire clk_min;
 wire clk_max;
 reg clk;
 wire [2:0]choose;
+wire [31:0] cntclk;
+wire [2:0]choosemode;
+reg [31:0]displaydata;
 assign choose={max,mid,min};
+assign choosemode={mode1,mode2,mode3};
 divider #(5000000) Ddd0(clk_500M,clk_min);
 divider #(2500000) Ddd1(clk_500M,clk_mid);
 divider #(1000000) Ddd2(clk_500M,clk_max);
@@ -100,5 +108,19 @@ Multiplexer_bus_2 #(32) M14(1'b1,Result,PCnext,JAL||JALR,RD1);
 Multiplexer_bus_2 #(32) M15(1'b1,RD1,Dout,MemToReg,RDin);
 REGISTER_FLIP_FLOP #(.NrOfBits(1)) R0(clk,!halt,ecall&&!(R1Data==32'h22),go,1'b1,1'b0,1'b0,halt);
 REGISTER_FLIP_FLOP #(.NrOfBits(32)) RSB(clk,ecall&&(R1Data==32'h22),MDin,1'b0,1'b1,1'b0,1'b0,ledData);
-display sbdis(clk_500M,ledData,AN,SEG);
+LogisimCounter cnt(clk,!halt,cntclk);
+always@(choosemode)
+begin
+ case(choosemode)
+ 3'b001:
+ displaydata<=cntclk;
+ 3'b010:
+ displaydata<=PC;
+ 3'b100:
+ displaydata<=IR;
+ default:
+ displaydata<=ledData;
+    endcase
+    end
+    display sbdis(clk_500M,displaydata,AN,SEG);
 endmodule

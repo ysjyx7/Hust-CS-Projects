@@ -85,15 +85,17 @@ module MIPS_RAM( CLK,
 
    RAM_a3      RAM_1 (.addr(s_LOGISIM_BUS_5[9:0]),
                       .clk(s_LOGISIM_NET_3),
-                      .d(s_LOGISIM_BUS_20[23:16]),
-                      .q(s_LOGISIM_BUS_14[23:16]),
-                      .we(s_LOGISIM_NET_2));
+                      .d(s_LOGISIM_BUS_20[7:0]),
+                      .q(s_LOGISIM_BUS_14[7:0]),
+                      .we(s_LOGISIM_NET_2),
+                      .sel(s_LOGISIM_NET_9));
 
    RAM_a2      RAM_2 (.addr(s_LOGISIM_BUS_5[9:0]),
                       .clk(s_LOGISIM_NET_3),
                       .d(s_LOGISIM_BUS_20[15:8]),
                       .q(s_LOGISIM_BUS_14[15:8]),
-                      .we(s_LOGISIM_NET_2));
+                      .we(s_LOGISIM_NET_2),
+                      .sel(s_LOGISIM_NET_10));
 
    OR_GATE #(.BubblesMask(0))
       GATE_1 (.Input_1(s_LOGISIM_NET_8),
@@ -102,9 +104,10 @@ module MIPS_RAM( CLK,
 
    RAM_a1      RAM_3 (.addr(s_LOGISIM_BUS_5[9:0]),
                       .clk(s_LOGISIM_NET_3),
-                      .d(s_LOGISIM_BUS_20[7:0]),
-                      .q(s_LOGISIM_BUS_14[7:0]),
-                      .we(s_LOGISIM_NET_2));
+                      .d(s_LOGISIM_BUS_20[23:16]),
+                      .q(s_LOGISIM_BUS_14[23:16]),
+                      .we(s_LOGISIM_NET_2),
+                      .sel(s_LOGISIM_NET_11));
 
    OR_GATE #(.BubblesMask(0))
       GATE_2 (.Input_1(s_LOGISIM_NET_6),
@@ -125,7 +128,8 @@ module MIPS_RAM( CLK,
                       .clk(s_LOGISIM_NET_3),
                       .d(s_LOGISIM_BUS_20[31:24]),
                       .q(s_LOGISIM_BUS_14[31:24]),
-                      .we(s_LOGISIM_NET_2));
+                      .we(s_LOGISIM_NET_2),
+                      .sel(s_LOGISIM_NET_12));
 
 
 

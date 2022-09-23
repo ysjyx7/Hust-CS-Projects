@@ -23,7 +23,7 @@ module ROM_ROM( Address,
    always @ (Address)
    begin
       case(Address)
-      0 : Data = 32'h00100493;
+  0 : Data = 32'h00100493;
 1 : Data = 32'h0100006f;
 2 : Data = 32'h00100493;
 3 : Data = 32'h00200913;

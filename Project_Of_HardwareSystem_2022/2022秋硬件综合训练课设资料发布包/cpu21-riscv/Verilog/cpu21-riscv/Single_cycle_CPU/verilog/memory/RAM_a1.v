@@ -10,13 +10,14 @@ module RAM_a1( addr,
                clk,
                d,
                we,
-               q);
+               q,
+               sel);
 
    /***************************************************************************
     ** Here the inputs are defined                                           **
     ***************************************************************************/
    input[9:0]  addr;
-   input  clk;
+   input  clk,sel;
    input[7:0]  d;
    input  we;
 
@@ -27,7 +28,7 @@ module RAM_a1( addr,
 
 	reg [9:0] mem[31:0];
 	always @ (posedge clk) begin
-		if (we)
+		if (we&&sel)
 			mem[addr] <= d;
 	end
 	assign q = mem[addr];

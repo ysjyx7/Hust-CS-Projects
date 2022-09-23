@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.runs/synth_1/single_cycle_cpu.tcl"
+  variable script "D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.runs/synth_1/single_cycle_cpu.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,71 +70,74 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.cache/wt [current_project]
-set_property parent.project_path D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.xpr [current_project]
+set_property webtalk.parent_dir D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.cache/wt [current_project]
+set_property parent.project_path D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.cache/ip [current_project]
+set_property ip_output_repo d:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/ALU.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/AND_GATE.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/AND_GATE_10_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/AND_GATE_5_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/AND_GATE_6_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/AND_GATE_7_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/AND_GATE_8_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/AND_GATE_9_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/AND_GATE_BUS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/arithmetic/Adder.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/wiring/Bit_Extender_12_32_SIGN.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/wiring/Bit_Extender_20_32_SIGN.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/wiring/Bit_Extender_2_5_SIGN.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/arithmetic/Comparator.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Decoder_16.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Demultiplexer_32.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/MIPS_RAM.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_16.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_16.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_32.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_4.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/NOR_GATE_BUS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/NOT_GATE.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/OR_GATE.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/OR_GATE_10_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/OR_GATE_11_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/OR_GATE_4_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/OR_GATE_7_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/OR_GATE_8_INPUTS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/OR_GATE_BUS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/RAM_a1.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/RAM_a2.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/RAM_a3.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/RAM_a4.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_PC.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_sb.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/memory/ROM_ROM.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/RegFile.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/arithmetic/Subtractor.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/Unsigned_cmp.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/gates/XOR_GATE_BUS.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/divider.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/help1.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/help2.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/verilog/circuit/yingbuxian.v
-  D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/single_cycle_cpu.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/ALU.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_10_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_5_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_6_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_7_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_8_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_9_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/AND_GATE_BUS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Adder.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_12_32_SIGN.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_20_32_SIGN.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/wiring/Bit_Extender_2_5_SIGN.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Comparator.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Decoder_16.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Demultiplexer_32.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/LogisimCounter.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/MIPS_RAM.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_16.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_16.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_2.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_32.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/plexers/Multiplexer_bus_4.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/NOR_GATE_BUS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/NOT_GATE.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_10_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_11_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_4_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_7_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_8_INPUTS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/OR_GATE_BUS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a1.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a2.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a3.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/RAM_a4.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_PC.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/REGISTER_FLIP_FLOP_sb.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/memory/ROM_ROM.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/RegFile.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Shifter_32_bit.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/arithmetic/Subtractor.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/Unsigned_cmp.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/gates/XOR_GATE_BUS.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/display.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/mips_cpu/mips_cpu.srcs/sources_1/new/divider.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/help1.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/help2.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/verilog/circuit/yingbuxian.v
+  D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/single_cycle_cpu.srcs/sources_1/new/single_cycle_cpu.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -145,8 +148,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/xdc/LogisimToplevelShell.xdc
-set_property used_in_implementation false [get_files D:/HustProjects/Project_Of_HardwareSystem_2022/2022秋硬件综合训练课设资料发布包/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/xdc/LogisimToplevelShell.xdc]
+read_xdc D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/xdc/LogisimToplevelShell.xdc
+set_property used_in_implementation false [get_files D:/QQ/QQmsg/2849458605/FileRecv/Single_cycle_CPU/xdc/LogisimToplevelShell.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
