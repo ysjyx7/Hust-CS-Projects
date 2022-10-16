@@ -1,5 +1,7 @@
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 #pragma once
 #include"Config.h"
+#include<sstream>
 using namespace std;
 
 #pragma comment(lib,"ws2_32.lib")
@@ -24,6 +26,8 @@ int main() {
 
     if (wsaData.wVersion != 0x0202) {
         printf("Winsock version is not correct!\n");
+        WSACleanup();
+        return 0;
     }
 
     printf("Winsock  startup Ok!\n");
@@ -45,11 +49,22 @@ int main() {
     int rtn = bind(srvSocket, (LPSOCKADDR)&addr, sizeof(addr));
     if (rtn != SOCKET_ERROR)
         printf("Socket bind Ok!\n");
+    else {
+        cout << "Socket bind Error!" << WSAGetLastError() << endl;
+        closesocket(srvSocket);
+        WSACleanup();
+        return 0;
+    }
     //listen
     rtn = listen(srvSocket, 5);
     if (rtn != SOCKET_ERROR)
         printf("Socket listen Ok!\n");
-
+    else {
+        cout << "Socket listen Error!" << WSAGetLastError() << endl;
+        closesocket(srvSocket);
+        WSACleanup();
+        return 0;
+    }
     clientAddr.sin_family = AF_INET;
     addrLen = sizeof(clientAddr);
     char recvBuf[4096];
@@ -94,6 +109,9 @@ int main() {
             sessionSocket = accept(srvSocket, (LPSOCKADDR)&clientAddr, &addrLen);
             if (sessionSocket != INVALID_SOCKET)
                 printf("Socket listen one client request!\n");
+            else {
+                cout << "Socket listened is invalid" << endl;
+            }
 
             //把会话SOCKET设为非阻塞模式
             if ((rtn = ioctlsocket(sessionSocket, FIONBIO, &blockMode) == SOCKET_ERROR)) { //FIONBIO：允许或禁止套接口s的非阻塞模式。
@@ -115,9 +133,10 @@ int main() {
             //如果会话SOCKET有数据到来，则接受客户的数据
             if (FD_ISSET(sessionSocket, &rfds)) {
                 //receiving data from client
-                memset(recvBuf, '\0', 4096);
-                rtn = recv(sessionSocket, recvBuf, 256, 0);
+                memset(recvBuf, '\0', Config::BUFFERLENGTH);
+                rtn = recv(sessionSocket, recvBuf, Config::BUFFERLENGTH, 0);
                 if (rtn > 0) {
+
                     printf("Received %d bytes from client: %s\n", rtn, recvBuf);
                 }
                 else {
