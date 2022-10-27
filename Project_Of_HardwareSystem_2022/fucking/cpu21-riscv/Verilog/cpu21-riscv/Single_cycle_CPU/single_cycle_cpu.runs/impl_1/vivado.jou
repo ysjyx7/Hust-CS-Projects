@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 26 20:53:48 2022
+# Process ID: 16840
+# Current directory: D:/GitProjects/HustProjects/Project_Of_HardwareSystem_2022/fucking/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1
+# Command line: vivado.exe -log single_cycle_cpu.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source single_cycle_cpu.tcl -notrace
+# Log file: D:/GitProjects/HustProjects/Project_Of_HardwareSystem_2022/fucking/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1/single_cycle_cpu.vdi
+# Journal file: D:/GitProjects/HustProjects/Project_Of_HardwareSystem_2022/fucking/cpu21-riscv/Verilog/cpu21-riscv/Single_cycle_CPU/single_cycle_cpu.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source single_cycle_cpu.tcl -notrace
