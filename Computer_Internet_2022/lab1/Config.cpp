@@ -9,7 +9,7 @@ Config::Config() {
 Config::~Config() {
 
 }
-const int Config::BUFFERLENGTH = 1024;
+const int Config::BUFFERLENGTH = 4096;
 std::string Config::PATH = "";
 std::string Config::SERVERADDRESS = "";
 const u_long Config::BLOCKMODE = 1;

@@ -33,6 +33,9 @@ class Request {
 	string body;
 public:
 	Request DecodeReqFromStr(stringstream& ss);
+	Request UpdateBody(string s);
+	string GetUrl();
+	string GetBody();
 	friend string GetResponseStr(Request req, int Statues);
 
 };

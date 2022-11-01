@@ -37,12 +37,25 @@ string GetResponseStr(Request req,int Status) {
 		FT = Ff->second;
 	}
 	else {
-		FT = "text/htm;";
+		FT = "text/html";
 	}
-	ss << "Content-Type : " << FT << ";charset=iso-8859-1\r\n";
+	ss << "Content-Type : " << FT << ";charset=UTF-8\r\n";
 	ss << "Connection: keep-alive\r\n";
 	
 	ss << "Content-Length:" << req.body.size() << "\r\n\r\n";
 
 	return ss.str();
+}
+
+Request Request::UpdateBody(string s) {
+	body = s;
+	return *this;
+}
+
+string Request::GetUrl() {
+	return url;
+}
+
+string Request::GetBody() {
+	return body;
 }
