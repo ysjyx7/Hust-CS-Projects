@@ -1,0 +1,1755 @@
+******模拟网络环境******：模拟网络环境初始化...
+******模拟网络环境******：模拟网络环境启动...
+发送方发送报文: seqnum = 0, acknum = -1, checksum = 29556, AAAAAAAAAAAAAAAAAAAA
+发送方启动计时器0
+当前报文发送后nextseqnum为1
+接收方滑动窗口内容为：[ 0 1 2 3 ]
+接收方收到的报文序号为基序号0
+接收方发送确认报文: seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+发送方正确收到确认: seqnum = -1, acknum = 0, checksum = 12851, ....................
+发送方滑动窗口内容为 [ 0 * * * ]
+收到的该报文的ack序号为0
+发送方发送报文: seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+发送方启动计时器1
+当前报文发送后nextseqnum为2
+发送方发送报文: seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+发送方启动计时器2
+当前报文发送后nextseqnum为3
+发送方发送报文: seqnum = 3, acknum = -1, checksum = 21843, DDDDDDDDDDDDDDDDDDDD
+发送方启动计时器3
+当前报文发送后nextseqnum为4
+发送方发送报文: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+发送方启动计时器4
+当前报文发送后nextseqnum为5
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 1, acknum = -1, checksum = 26985, CBBBBBBBBBBBBBBBBBBB
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 2, acknum = -1, checksum = 24414, DCCCCCCCCCCCCCCCCCCC
+接收方滑动窗口内容为：[ 1 2 3 4 ]
+接收方收到的报文序号为3
+接收方已缓存发送方的报文: seqnum = 3, acknum = -1, checksum = 21843, DDDDDDDDDDDDDDDDDDDD
+接收方发送确认报文: seqnum = -1, acknum = 3, checksum = 12848, ....................
+超时了
+重发第1个报文
+发送方定时器时间到，重发报文: seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+超时了
+重发第2个报文
+发送方定时器时间到，重发报文: seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+超时了
+重发第3个报文
+发送方定时器时间到，重发报文: seqnum = 3, acknum = -1, checksum = 21843, DDDDDDDDDDDDDDDDDDDD
+超时了
+重发第4个报文
+发送方定时器时间到，重发报文: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+发送方正确收到确认: seqnum = -1, acknum = 3, checksum = 12848, ....................
+发送方滑动窗口内容为 [ 1 2 3 4 ]
+收到了窗口中的未确认ack3
+接收方滑动窗口内容为：[ 1 2 3 4 ]
+接收方收到的报文序号为4
+接收方已缓存发送方的报文: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+接收方发送确认报文: seqnum = -1, acknum = 4, checksum = 12847, ....................
+发送方正确收到确认: seqnum = -1, acknum = 4, checksum = 12847, ....................
+发送方滑动窗口内容为 [ 1 2 3 4 ]
+收到了窗口中的未确认ack4
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 1, acknum = -1, checksum = 26985, CBBBBBBBBBBBBBBBBBBB
+超时了
+重发第1个报文
+发送方定时器时间到，重发报文: seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+超时了
+重发第2个报文
+发送方定时器时间到，重发报文: seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+接收方滑动窗口内容为：[ 1 2 3 4 ]
+接收方收到的报文序号为3
+接收方已缓存发送方的报文: seqnum = 3, acknum = -1, checksum = 21843, DDDDDDDDDDDDDDDDDDDD
+接收方发送确认报文: seqnum = -1, acknum = 3, checksum = 12848, ....................
+接收方滑动窗口内容为：[ 1 2 3 4 ]
+接收方收到的报文序号为4
+接收方已缓存发送方的报文: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+接收方发送确认报文: seqnum = -1, acknum = 4, checksum = 12847, ....................
+接收方滑动窗口内容为：[ 1 2 3 4 ]
+接收方收到的报文序号为基序号1
+接收方发送确认报文: seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+发送方正确收到确认: seqnum = -1, acknum = 3, checksum = 12848, ....................
+发送方滑动窗口内容为 [ 1 2 3 4 ]
+收到了无用ack
+发送方正确收到确认: seqnum = -1, acknum = 4, checksum = 12847, ....................
+发送方滑动窗口内容为 [ 1 2 3 4 ]
+收到了无用ack
+超时了
+重发第1个报文
+发送方定时器时间到，重发报文: seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+超时了
+重发第2个报文
+发送方定时器时间到，重发报文: seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+接收方滑动窗口内容为：[ 2 3 4 5 ]
+接收方收到的报文序号为基序号2
+接收方发送确认报文: seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+发送方正确收到确认: seqnum = -1, acknum = 1, checksum = 12850, ....................
+发送方滑动窗口内容为 [ 1 2 3 4 ]
+收到的该报文的ack序号为1
+接收方滑动窗口内容为：[ 5 6 7 8 ]
+接收方正确收到已确认的过时报文: seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+接收方发送确认报文: seqnum = -1, acknum = 1, checksum = 12850, ....................
+发送方正确收到确认: seqnum = -1, acknum = 2, checksum = 12849, ....................
+发送方滑动窗口内容为 [ 2 3 4 * ]
+收到的该报文的ack序号为2
+接收方滑动窗口内容为：[ 5 6 7 8 ]
+接收方正确收到已确认的过时报文: seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+接收方发送确认报文: seqnum = -1, acknum = 2, checksum = 12849, ....................
+发送方正确收到确认: seqnum = -1, acknum = 1, checksum = 12850, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方正确收到确认: seqnum = -1, acknum = 2, checksum = 12849, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 5, acknum = -1, checksum = 16701, FFFFFFFFFFFFFFFFFFFF
+发送方启动计时器5
+当前报文发送后nextseqnum为6
+发送方发送报文: seqnum = 6, acknum = -1, checksum = 14130, GGGGGGGGGGGGGGGGGGGG
+发送方启动计时器6
+当前报文发送后nextseqnum为7
+发送方发送报文: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+发送方启动计时器7
+当前报文发送后nextseqnum为8
+发送方发送报文: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+发送方启动计时器8
+当前报文发送后nextseqnum为9
+接收方滑动窗口内容为：[ 5 6 7 8 ]
+接收方收到的报文序号为基序号5
+接收方发送确认报文: seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+接收方滑动窗口内容为：[ 6 7 8 9 ]
+接收方收到的报文序号为基序号6
+接收方发送确认报文: seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 7, acknum = -999999, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+发送方收到的ACK损坏
+接收方滑动窗口内容为：[ 7 8 9 10 ]
+接收方收到的报文序号为8
+接收方已缓存发送方的报文: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+接收方发送确认报文: seqnum = -1, acknum = 8, checksum = 12843, ....................
+超时了
+重发第5个报文
+发送方定时器时间到，重发报文: seqnum = 5, acknum = -1, checksum = 16701, FFFFFFFFFFFFFFFFFFFF
+超时了
+重发第6个报文
+发送方定时器时间到，重发报文: seqnum = 6, acknum = -1, checksum = 14130, GGGGGGGGGGGGGGGGGGGG
+超时了
+重发第7个报文
+发送方定时器时间到，重发报文: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+超时了
+重发第8个报文
+发送方定时器时间到，重发报文: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+发送方正确收到确认: seqnum = -1, acknum = 6, checksum = 12845, ....................
+发送方滑动窗口内容为 [ 5 6 7 8 ]
+收到了窗口中的未确认ack6
+发送方正确收到确认: seqnum = -1, acknum = 8, checksum = 12843, ....................
+发送方滑动窗口内容为 [ 5 6 7 8 ]
+收到了窗口中的未确认ack8
+接收方滑动窗口内容为：[ 7 8 9 10 ]
+接收方正确收到已确认的过时报文: seqnum = 6, acknum = -1, checksum = 14130, GGGGGGGGGGGGGGGGGGGG
+接收方发送确认报文: seqnum = -1, acknum = 6, checksum = 12845, ....................
+发送方正确收到确认: seqnum = -1, acknum = 6, checksum = 12845, ....................
+发送方滑动窗口内容为 [ 5 6 7 8 ]
+收到了无用ack
+接收方滑动窗口内容为：[ 7 8 9 10 ]
+接收方收到的报文序号为8
+接收方已缓存发送方的报文: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+接收方发送确认报文: seqnum = -1, acknum = 8, checksum = 12843, ....................
+超时了
+重发第5个报文
+发送方定时器时间到，重发报文: seqnum = 5, acknum = -1, checksum = 16701, FFFFFFFFFFFFFFFFFFFF
+超时了
+重发第7个报文
+发送方定时器时间到，重发报文: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+发送方正确收到确认: seqnum = -1, acknum = 8, checksum = 12843, ....................
+发送方滑动窗口内容为 [ 5 6 7 8 ]
+收到了无用ack
+接收方滑动窗口内容为：[ 7 8 9 10 ]
+接收方正确收到已确认的过时报文: seqnum = 5, acknum = -1, checksum = 16701, FFFFFFFFFFFFFFFFFFFF
+接收方发送确认报文: seqnum = -1, acknum = 5, checksum = 12846, ....................
+发送方正确收到确认: seqnum = -1, acknum = 5, checksum = 12846, ....................
+发送方滑动窗口内容为 [ 5 6 7 8 ]
+收到的该报文的ack序号为5
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 7, acknum = -1, checksum = 11559, IHHHHHHHHHHHHHHHHHHH
+超时了
+重发第7个报文
+发送方定时器时间到，重发报文: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+接收方滑动窗口内容为：[ 7 8 9 10 ]
+接收方收到的报文序号为基序号7
+接收方发送确认报文: seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+发送方正确收到确认: seqnum = -1, acknum = 7, checksum = 12844, ....................
+发送方滑动窗口内容为 [ 7 8 * * ]
+收到的该报文的ack序号为7
+发送方发送报文: seqnum = 9, acknum = -1, checksum = 6417, JJJJJJJJJJJJJJJJJJJJ
+发送方启动计时器9
+当前报文发送后nextseqnum为10
+发送方发送报文: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+发送方启动计时器10
+当前报文发送后nextseqnum为11
+发送方发送报文: seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+发送方启动计时器11
+当前报文发送后nextseqnum为12
+发送方发送报文: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+发送方启动计时器12
+当前报文发送后nextseqnum为13
+接收方滑动窗口内容为：[ 9 10 11 12 ]
+接收方收到的报文序号为基序号9
+接收方发送确认报文: seqnum = -1, acknum = 9, checksum = 12842, ....................
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+接收方滑动窗口内容为：[ 10 11 12 13 ]
+接收方收到的报文序号为基序号10
+接收方发送确认报文: seqnum = -1, acknum = 10, checksum = 12841, ....................
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+超时了
+重发第9个报文
+发送方定时器时间到，重发报文: seqnum = 9, acknum = -1, checksum = 6417, JJJJJJJJJJJJJJJJJJJJ
+发送方正确收到确认: seqnum = -1, acknum = 9, checksum = 12842, ....................
+发送方滑动窗口内容为 [ 9 10 11 12 ]
+收到的该报文的ack序号为9
+超时了
+重发第10个报文
+发送方定时器时间到，重发报文: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+超时了
+重发第11个报文
+发送方定时器时间到，重发报文: seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+超时了
+重发第12个报文
+发送方定时器时间到，重发报文: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+接收方滑动窗口内容为：[ 11 12 13 14 ]
+接收方收到的报文序号为基序号11
+接收方发送确认报文: seqnum = -1, acknum = 11, checksum = 12840, ....................
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+发送方正确收到确认: seqnum = -1, acknum = 11, checksum = 12840, ....................
+发送方滑动窗口内容为 [ 10 11 12 * ]
+收到了窗口中的未确认ack11
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 12, acknum = -1, checksum = 64239, NMMMMMMMMMMMMMMMMMMM
+超时了
+重发第10个报文
+发送方定时器时间到，重发报文: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+超时了
+重发第12个报文
+发送方定时器时间到，重发报文: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+接收方滑动窗口内容为：[ 12 13 14 15 ]
+接收方正确收到已确认的过时报文: seqnum = 9, acknum = -1, checksum = 6417, JJJJJJJJJJJJJJJJJJJJ
+接收方发送确认报文: seqnum = -1, acknum = 9, checksum = 12842, ....................
+接收方滑动窗口内容为：[ 12 13 14 15 ]
+接收方正确收到已确认的过时报文: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+接收方发送确认报文: seqnum = -1, acknum = 10, checksum = 12841, ....................
+接收方滑动窗口内容为：[ 12 13 14 15 ]
+接收方正确收到已确认的过时报文: seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+接收方发送确认报文: seqnum = -1, acknum = 11, checksum = 12840, ....................
+发送方正确收到确认: seqnum = -1, acknum = 9, checksum = 12842, ....................
+发送方滑动窗口内容为 [ 10 11 12 * ]
+收到了无用ack
+接收方滑动窗口内容为：[ 12 13 14 15 ]
+接收方收到的报文序号为基序号12
+接收方发送确认报文: seqnum = -1, acknum = 12, checksum = 12839, ....................
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+发送方正确收到确认: seqnum = -1, acknum = 10, checksum = 12841, ....................
+发送方滑动窗口内容为 [ 10 11 12 * ]
+收到的该报文的ack序号为10
+发送方正确收到确认: seqnum = -1, acknum = 11, checksum = 12840, ....................
+发送方滑动窗口内容为 [ 12 * * * ]
+收到了无用ack
+超时了
+重发第12个报文
+发送方定时器时间到，重发报文: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+接收方滑动窗口内容为：[ 13 14 15 16 ]
+接收方正确收到已确认的过时报文: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+接收方发送确认报文: seqnum = -1, acknum = 12, checksum = 12839, ....................
+发送方正确收到确认: seqnum = -1, acknum = 12, checksum = 12839, ....................
+发送方滑动窗口内容为 [ 12 * * * ]
+收到的该报文的ack序号为12
+接收方滑动窗口内容为：[ 13 14 15 16 ]
+接收方正确收到已确认的过时报文: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+接收方发送确认报文: seqnum = -1, acknum = 12, checksum = 12839, ....................
+发送方正确收到确认: seqnum = -1, acknum = 12, checksum = 12839, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方正确收到确认: seqnum = -1, acknum = 12, checksum = 12839, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+发送方启动计时器13
+当前报文发送后nextseqnum为14
+发送方发送报文: seqnum = 14, acknum = -1, checksum = 59097, OOOOOOOOOOOOOOOOOOOO
+发送方启动计时器14
+当前报文发送后nextseqnum为15
+发送方发送报文: seqnum = 15, acknum = -1, checksum = 56526, PPPPPPPPPPPPPPPPPPPP
+发送方启动计时器15
+当前报文发送后nextseqnum为16
+发送方发送报文: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+发送方启动计时器16
+当前报文发送后nextseqnum为17
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = -999999, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+接收方滑动窗口内容为：[ 13 14 15 16 ]
+接收方收到的报文序号为14
+接收方已缓存发送方的报文: seqnum = 14, acknum = -1, checksum = 59097, OOOOOOOOOOOOOOOOOOOO
+接收方发送确认报文: seqnum = -1, acknum = 14, checksum = 12837, ....................
+接收方滑动窗口内容为：[ 13 14 15 16 ]
+接收方收到的报文序号为15
+接收方已缓存发送方的报文: seqnum = 15, acknum = -1, checksum = 56526, PPPPPPPPPPPPPPPPPPPP
+接收方发送确认报文: seqnum = -1, acknum = 15, checksum = 12836, ....................
+发送方正确收到确认: seqnum = -1, acknum = 14, checksum = 12837, ....................
+发送方滑动窗口内容为 [ 13 14 15 16 ]
+收到了窗口中的未确认ack14
+接收方滑动窗口内容为：[ 13 14 15 16 ]
+接收方收到的报文序号为16
+接收方已缓存发送方的报文: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+接收方发送确认报文: seqnum = -1, acknum = 16, checksum = 12835, ....................
+超时了
+重发第13个报文
+发送方定时器时间到，重发报文: seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+超时了
+重发第15个报文
+发送方定时器时间到，重发报文: seqnum = 15, acknum = -1, checksum = 56526, PPPPPPPPPPPPPPPPPPPP
+超时了
+重发第16个报文
+发送方定时器时间到，重发报文: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+发送方正确收到确认: seqnum = -1, acknum = 15, checksum = 12836, ....................
+发送方滑动窗口内容为 [ 13 14 15 16 ]
+收到了窗口中的未确认ack15
+发送方收到的ACK损坏
+接收方滑动窗口内容为：[ 13 14 15 16 ]
+接收方收到的报文序号为15
+接收方已缓存发送方的报文: seqnum = 15, acknum = -1, checksum = 56526, PPPPPPPPPPPPPPPPPPPP
+接收方发送确认报文: seqnum = -1, acknum = 15, checksum = 12836, ....................
+发送方正确收到确认: seqnum = -1, acknum = 15, checksum = 12836, ....................
+发送方滑动窗口内容为 [ 13 14 15 16 ]
+收到了无用ack
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 16, acknum = -1, checksum = 53955, RQQQQQQQQQQQQQQQQQQQ
+超时了
+重发第13个报文
+发送方定时器时间到，重发报文: seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+超时了
+重发第16个报文
+发送方定时器时间到，重发报文: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+接收方滑动窗口内容为：[ 13 14 15 16 ]
+接收方收到的报文序号为基序号13
+接收方发送确认报文: seqnum = -1, acknum = 13, checksum = 12838, ....................
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+发送方收到的ACK损坏
+接收方滑动窗口内容为：[ 17 18 19 20 ]
+接收方正确收到已确认的过时报文: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+接收方发送确认报文: seqnum = -1, acknum = 16, checksum = 12835, ....................
+超时了
+重发第13个报文
+发送方定时器时间到，重发报文: seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+超时了
+重发第16个报文
+发送方定时器时间到，重发报文: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+发送方正确收到确认: seqnum = -1, acknum = 16, checksum = 12835, ....................
+发送方滑动窗口内容为 [ 13 14 15 16 ]
+收到了窗口中的未确认ack16
+接收方滑动窗口内容为：[ 17 18 19 20 ]
+接收方正确收到已确认的过时报文: seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+接收方发送确认报文: seqnum = -1, acknum = 13, checksum = 12838, ....................
+发送方正确收到确认: seqnum = -1, acknum = 13, checksum = 12838, ....................
+发送方滑动窗口内容为 [ 13 14 15 16 ]
+收到的该报文的ack序号为13
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 16, acknum = -1, checksum = 53955, RQQQQQQQQQQQQQQQQQQQ
+发送方发送报文: seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+发送方启动计时器17
+当前报文发送后nextseqnum为18
+发送方发送报文: seqnum = 18, acknum = -1, checksum = 48813, SSSSSSSSSSSSSSSSSSSS
+发送方启动计时器18
+当前报文发送后nextseqnum为19
+发送方发送报文: seqnum = 19, acknum = -1, checksum = 46242, TTTTTTTTTTTTTTTTTTTT
+发送方启动计时器19
+当前报文发送后nextseqnum为20
+发送方发送报文: seqnum = 20, acknum = -1, checksum = 43671, UUUUUUUUUUUUUUUUUUUU
+发送方启动计时器20
+当前报文发送后nextseqnum为21
+接收方滑动窗口内容为：[ 17 18 19 20 ]
+接收方收到的报文序号为18
+接收方已缓存发送方的报文: seqnum = 18, acknum = -1, checksum = 48813, SSSSSSSSSSSSSSSSSSSS
+接收方发送确认报文: seqnum = -1, acknum = 18, checksum = 12833, ....................
+发送方正确收到确认: seqnum = -1, acknum = 18, checksum = 12833, ....................
+发送方滑动窗口内容为 [ 17 18 19 20 ]
+收到了窗口中的未确认ack18
+接收方滑动窗口内容为：[ 17 18 19 20 ]
+接收方收到的报文序号为19
+接收方已缓存发送方的报文: seqnum = 19, acknum = -1, checksum = 46242, TTTTTTTTTTTTTTTTTTTT
+接收方发送确认报文: seqnum = -1, acknum = 19, checksum = 12832, ....................
+接收方滑动窗口内容为：[ 17 18 19 20 ]
+接收方收到的报文序号为20
+接收方已缓存发送方的报文: seqnum = 20, acknum = -1, checksum = 43671, UUUUUUUUUUUUUUUUUUUU
+接收方发送确认报文: seqnum = -1, acknum = 20, checksum = 12831, ....................
+发送方正确收到确认: seqnum = -1, acknum = 19, checksum = 12832, ....................
+发送方滑动窗口内容为 [ 17 18 19 20 ]
+收到了窗口中的未确认ack19
+超时了
+重发第17个报文
+发送方定时器时间到，重发报文: seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+发送方正确收到确认: seqnum = -1, acknum = 20, checksum = 12831, ....................
+发送方滑动窗口内容为 [ 17 18 19 20 ]
+收到了窗口中的未确认ack20
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 17, acknum = -1, checksum = 51384, SRRRRRRRRRRRRRRRRRRR
+超时了
+重发第17个报文
+发送方定时器时间到，重发报文: seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+超时了
+重发第17个报文
+发送方定时器时间到，重发报文: seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+超时了
+重发第17个报文
+发送方定时器时间到，重发报文: seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+接收方滑动窗口内容为：[ 17 18 19 20 ]
+接收方收到的报文序号为基序号17
+接收方发送确认报文: seqnum = -1, acknum = 17, checksum = 12834, ....................
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+发送方正确收到确认: seqnum = -1, acknum = 17, checksum = 12834, ....................
+发送方滑动窗口内容为 [ 17 18 19 20 ]
+收到的该报文的ack序号为17
+发送方发送报文: seqnum = 21, acknum = -1, checksum = 41100, VVVVVVVVVVVVVVVVVVVV
+发送方启动计时器21
+当前报文发送后nextseqnum为22
+发送方发送报文: seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+发送方启动计时器22
+当前报文发送后nextseqnum为23
+发送方发送报文: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+发送方启动计时器23
+当前报文发送后nextseqnum为24
+发送方发送报文: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+发送方启动计时器24
+当前报文发送后nextseqnum为25
+接收方滑动窗口内容为：[ 21 22 23 24 ]
+接收方收到的报文序号为基序号21
+接收方发送确认报文: seqnum = -1, acknum = 21, checksum = 12830, ....................
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+发送方正确收到确认: seqnum = -1, acknum = 21, checksum = 12830, ....................
+发送方滑动窗口内容为 [ 21 22 23 24 ]
+收到的该报文的ack序号为21
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = -999999, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+接收方滑动窗口内容为：[ 22 23 24 25 ]
+接收方收到的报文序号为23
+接收方已缓存发送方的报文: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+接收方发送确认报文: seqnum = -1, acknum = 23, checksum = 12828, ....................
+超时了
+重发第22个报文
+发送方定时器时间到，重发报文: seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+超时了
+重发第23个报文
+发送方定时器时间到，重发报文: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+超时了
+重发第24个报文
+发送方定时器时间到，重发报文: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+发送方正确收到确认: seqnum = -1, acknum = 23, checksum = 12828, ....................
+发送方滑动窗口内容为 [ 22 23 24 * ]
+收到了窗口中的未确认ack23
+接收方滑动窗口内容为：[ 22 23 24 25 ]
+接收方收到的报文序号为24
+接收方已缓存发送方的报文: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+接收方发送确认报文: seqnum = -1, acknum = 24, checksum = 12827, ....................
+接收方滑动窗口内容为：[ 22 23 24 25 ]
+接收方收到的报文序号为23
+接收方已缓存发送方的报文: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+接收方发送确认报文: seqnum = -1, acknum = 23, checksum = 12828, ....................
+接收方滑动窗口内容为：[ 22 23 24 25 ]
+接收方收到的报文序号为24
+接收方已缓存发送方的报文: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+接收方发送确认报文: seqnum = -1, acknum = 24, checksum = 12827, ....................
+发送方正确收到确认: seqnum = -1, acknum = 24, checksum = 12827, ....................
+发送方滑动窗口内容为 [ 22 23 24 * ]
+收到了窗口中的未确认ack24
+发送方正确收到确认: seqnum = -1, acknum = 23, checksum = 12828, ....................
+发送方滑动窗口内容为 [ 22 23 24 * ]
+收到了无用ack
+超时了
+重发第22个报文
+发送方定时器时间到，重发报文: seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+发送方收到的ACK损坏
+接收方滑动窗口内容为：[ 22 23 24 25 ]
+接收方收到的报文序号为基序号22
+接收方发送确认报文: seqnum = -1, acknum = 22, checksum = 12829, ....................
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+发送方正确收到确认: seqnum = -1, acknum = 22, checksum = 12829, ....................
+发送方滑动窗口内容为 [ 22 23 24 * ]
+收到的该报文的ack序号为22
+发送方发送报文: seqnum = 25, acknum = -1, checksum = 30816, ZZZZZZZZZZZZZZZZZZZZ
+发送方启动计时器25
+当前报文发送后nextseqnum为26
+发送方发送报文: seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+发送方启动计时器26
+当前报文发送后nextseqnum为27
+发送方发送报文: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+发送方启动计时器27
+当前报文发送后nextseqnum为28
+发送方发送报文: seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+发送方启动计时器28
+当前报文发送后nextseqnum为29
+接收方滑动窗口内容为：[ 25 26 27 28 ]
+接收方收到的报文序号为基序号25
+接收方发送确认报文: seqnum = -1, acknum = 25, checksum = 12826, ....................
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+接收方滑动窗口内容为：[ 26 27 28 29 ]
+接收方收到的报文序号为基序号26
+接收方发送确认报文: seqnum = -1, acknum = 26, checksum = 12825, ....................
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+发送方正确收到确认: seqnum = -1, acknum = 25, checksum = 12826, ....................
+发送方滑动窗口内容为 [ 25 26 27 28 ]
+收到的该报文的ack序号为25
+接收方滑动窗口内容为：[ 27 28 29 30 ]
+接收方收到的报文序号为基序号27
+接收方发送确认报文: seqnum = -1, acknum = 27, checksum = 12824, ....................
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+接收方滑动窗口内容为：[ 28 29 30 31 ]
+接收方收到的报文序号为基序号28
+接收方发送确认报文: seqnum = -1, acknum = 28, checksum = 12823, ....................
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+超时了
+重发第26个报文
+发送方定时器时间到，重发报文: seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+超时了
+重发第27个报文
+发送方定时器时间到，重发报文: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+发送方正确收到确认: seqnum = -1, acknum = 26, checksum = 12825, ....................
+发送方滑动窗口内容为 [ 26 27 28 * ]
+收到的该报文的ack序号为26
+超时了
+重发第28个报文
+发送方定时器时间到，重发报文: seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+发送方正确收到确认: seqnum = -1, acknum = 27, checksum = 12824, ....................
+发送方滑动窗口内容为 [ 27 28 * * ]
+收到的该报文的ack序号为27
+发送方正确收到确认: seqnum = -1, acknum = 28, checksum = 12823, ....................
+发送方滑动窗口内容为 [ 28 * * * ]
+收到的该报文的ack序号为28
+接收方滑动窗口内容为：[ 29 30 31 32 ]
+接收方正确收到已确认的过时报文: seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+接收方发送确认报文: seqnum = -1, acknum = 26, checksum = 12825, ....................
+发送方正确收到确认: seqnum = -1, acknum = 26, checksum = 12825, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = -999999, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+发送方发送报文: seqnum = 29, acknum = -1, checksum = 21817, DDDDDDDDDDDDDDDDDDDD
+发送方启动计时器29
+当前报文发送后nextseqnum为30
+发送方发送报文: seqnum = 30, acknum = -1, checksum = 19246, EEEEEEEEEEEEEEEEEEEE
+发送方启动计时器30
+当前报文发送后nextseqnum为31
+发送方发送报文: seqnum = 31, acknum = -1, checksum = 16675, FFFFFFFFFFFFFFFFFFFF
+发送方启动计时器31
+当前报文发送后nextseqnum为32
+发送方发送报文: seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+发送方启动计时器32
+当前报文发送后nextseqnum为33
+接收方滑动窗口内容为：[ 29 30 31 32 ]
+接收方收到的报文序号为基序号29
+接收方发送确认报文: seqnum = -1, acknum = 29, checksum = 12822, ....................
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+发送方正确收到确认: seqnum = -1, acknum = 29, checksum = 12822, ....................
+发送方滑动窗口内容为 [ 29 30 31 32 ]
+收到的该报文的ack序号为29
+接收方滑动窗口内容为：[ 30 31 32 33 ]
+接收方收到的报文序号为基序号30
+接收方发送确认报文: seqnum = -1, acknum = 30, checksum = 12821, ....................
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+发送方正确收到确认: seqnum = -1, acknum = 30, checksum = 12821, ....................
+发送方滑动窗口内容为 [ 30 31 32 * ]
+收到的该报文的ack序号为30
+接收方滑动窗口内容为：[ 31 32 33 34 ]
+接收方收到的报文序号为32
+接收方已缓存发送方的报文: seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+接收方发送确认报文: seqnum = -1, acknum = 32, checksum = 12819, ....................
+超时了
+重发第31个报文
+发送方定时器时间到，重发报文: seqnum = 31, acknum = -1, checksum = 16675, FFFFFFFFFFFFFFFFFFFF
+超时了
+重发第32个报文
+发送方定时器时间到，重发报文: seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+发送方正确收到确认: seqnum = -1, acknum = 32, checksum = 12819, ....................
+发送方滑动窗口内容为 [ 31 32 * * ]
+收到了窗口中的未确认ack32
+接收方滑动窗口内容为：[ 31 32 33 34 ]
+接收方收到的报文序号为基序号31
+接收方发送确认报文: seqnum = -1, acknum = 31, checksum = 12820, ....................
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+发送方正确收到确认: seqnum = -1, acknum = 31, checksum = 12820, ....................
+发送方滑动窗口内容为 [ 31 32 * * ]
+收到的该报文的ack序号为31
+接收方滑动窗口内容为：[ 33 34 35 36 ]
+接收方正确收到已确认的过时报文: seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+接收方发送确认报文: seqnum = -1, acknum = 32, checksum = 12819, ....................
+发送方正确收到确认: seqnum = -1, acknum = 32, checksum = 12819, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 33, acknum = -1, checksum = 11533, HHHHHHHHHHHHHHHHHHHH
+发送方启动计时器33
+当前报文发送后nextseqnum为34
+发送方发送报文: seqnum = 34, acknum = -1, checksum = 8962, IIIIIIIIIIIIIIIIIIII
+发送方启动计时器34
+当前报文发送后nextseqnum为35
+发送方发送报文: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+发送方启动计时器35
+当前报文发送后nextseqnum为36
+发送方发送报文: seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+发送方启动计时器36
+当前报文发送后nextseqnum为37
+接收方滑动窗口内容为：[ 33 34 35 36 ]
+接收方收到的报文序号为基序号33
+接收方发送确认报文: seqnum = -1, acknum = 33, checksum = 12818, ....................
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = -999999, acknum = -1, checksum = 8962, IIIIIIIIIIIIIIIIIIII
+发送方正确收到确认: seqnum = -1, acknum = 33, checksum = 12818, ....................
+发送方滑动窗口内容为 [ 33 34 35 36 ]
+收到的该报文的ack序号为33
+接收方滑动窗口内容为：[ 34 35 36 37 ]
+接收方收到的报文序号为35
+接收方已缓存发送方的报文: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+接收方发送确认报文: seqnum = -1, acknum = 35, checksum = 12816, ....................
+超时了
+重发第34个报文
+发送方定时器时间到，重发报文: seqnum = 34, acknum = -1, checksum = 8962, IIIIIIIIIIIIIIIIIIII
+超时了
+重发第35个报文
+发送方定时器时间到，重发报文: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+超时了
+重发第36个报文
+发送方定时器时间到，重发报文: seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+接收方滑动窗口内容为：[ 34 35 36 37 ]
+接收方收到的报文序号为36
+接收方已缓存发送方的报文: seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+接收方发送确认报文: seqnum = -1, acknum = 36, checksum = 12815, ....................
+发送方正确收到确认: seqnum = -1, acknum = 35, checksum = 12816, ....................
+发送方滑动窗口内容为 [ 34 35 36 * ]
+收到了窗口中的未确认ack35
+接收方滑动窗口内容为：[ 34 35 36 37 ]
+接收方收到的报文序号为基序号34
+接收方发送确认报文: seqnum = -1, acknum = 34, checksum = 12817, ....................
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+发送方正确收到确认: seqnum = -1, acknum = 36, checksum = 12815, ....................
+发送方滑动窗口内容为 [ 34 35 36 * ]
+收到了窗口中的未确认ack36
+发送方正确收到确认: seqnum = -1, acknum = 34, checksum = 12817, ....................
+发送方滑动窗口内容为 [ 34 35 36 * ]
+收到的该报文的ack序号为34
+接收方滑动窗口内容为：[ 37 38 39 40 ]
+接收方正确收到已确认的过时报文: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+接收方发送确认报文: seqnum = -1, acknum = 35, checksum = 12816, ....................
+发送方正确收到确认: seqnum = -1, acknum = 35, checksum = 12816, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 37, acknum = -1, checksum = 1249, LLLLLLLLLLLLLLLLLLLL
+发送方启动计时器37
+当前报文发送后nextseqnum为38
+发送方发送报文: seqnum = 38, acknum = -1, checksum = 64213, MMMMMMMMMMMMMMMMMMMM
+发送方启动计时器38
+当前报文发送后nextseqnum为39
+发送方发送报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+发送方启动计时器39
+当前报文发送后nextseqnum为40
+发送方发送报文: seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+发送方启动计时器40
+当前报文发送后nextseqnum为41
+接收方滑动窗口内容为：[ 37 38 39 40 ]
+接收方收到的报文序号为基序号37
+接收方发送确认报文: seqnum = -1, acknum = 37, checksum = 12814, ....................
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+发送方正确收到确认: seqnum = -1, acknum = 37, checksum = 12814, ....................
+发送方滑动窗口内容为 [ 37 38 39 40 ]
+收到的该报文的ack序号为37
+接收方滑动窗口内容为：[ 38 39 40 41 ]
+接收方收到的报文序号为39
+接收方已缓存发送方的报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+接收方发送确认报文: seqnum = -1, acknum = 39, checksum = 12812, ....................
+超时了
+重发第38个报文
+发送方定时器时间到，重发报文: seqnum = 38, acknum = -1, checksum = 64213, MMMMMMMMMMMMMMMMMMMM
+超时了
+重发第39个报文
+发送方定时器时间到，重发报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+超时了
+重发第40个报文
+发送方定时器时间到，重发报文: seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 40, acknum = -1, checksum = 59071, POOOOOOOOOOOOOOOOOOO
+接收方滑动窗口内容为：[ 38 39 40 41 ]
+接收方收到的报文序号为基序号38
+接收方发送确认报文: seqnum = -1, acknum = 38, checksum = 12813, ....................
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+发送方正确收到确认: seqnum = -1, acknum = 38, checksum = 12813, ....................
+发送方滑动窗口内容为 [ 38 39 40 * ]
+收到的该报文的ack序号为38
+接收方滑动窗口内容为：[ 40 41 42 43 ]
+接收方正确收到已确认的过时报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+接收方发送确认报文: seqnum = -1, acknum = 39, checksum = 12812, ....................
+超时了
+重发第39个报文
+发送方定时器时间到，重发报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+超时了
+重发第40个报文
+发送方定时器时间到，重发报文: seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+接收方滑动窗口内容为：[ 40 41 42 43 ]
+接收方收到的报文序号为基序号40
+接收方发送确认报文: seqnum = -1, acknum = 40, checksum = 12811, ....................
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+接收方滑动窗口内容为：[ 41 42 43 44 ]
+接收方正确收到已确认的过时报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+接收方发送确认报文: seqnum = -1, acknum = 39, checksum = 12812, ....................
+接收方滑动窗口内容为：[ 41 42 43 44 ]
+接收方正确收到已确认的过时报文: seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+接收方发送确认报文: seqnum = -1, acknum = 40, checksum = 12811, ....................
+发送方正确收到确认: seqnum = -1, acknum = 40, checksum = 12811, ....................
+发送方滑动窗口内容为 [ 39 40 * * ]
+收到了窗口中的未确认ack40
+超时了
+重发第39个报文
+发送方定时器时间到，重发报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 39, acknum = -1, checksum = 61642, ONNNNNNNNNNNNNNNNNNN
+发送方收到的ACK损坏
+发送方收到的ACK损坏
+超时了
+重发第39个报文
+发送方定时器时间到，重发报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+接收方滑动窗口内容为：[ 41 42 43 44 ]
+接收方正确收到已确认的过时报文: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+接收方发送确认报文: seqnum = -1, acknum = 39, checksum = 12812, ....................
+发送方正确收到确认: seqnum = -1, acknum = 39, checksum = 12812, ....................
+发送方滑动窗口内容为 [ 39 40 * * ]
+收到的该报文的ack序号为39
+发送方发送报文: seqnum = 41, acknum = -1, checksum = 56500, PPPPPPPPPPPPPPPPPPPP
+发送方启动计时器41
+当前报文发送后nextseqnum为42
+发送方发送报文: seqnum = 42, acknum = -1, checksum = 53929, QQQQQQQQQQQQQQQQQQQQ
+发送方启动计时器42
+当前报文发送后nextseqnum为43
+发送方发送报文: seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+发送方启动计时器43
+当前报文发送后nextseqnum为44
+发送方发送报文: seqnum = 44, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+发送方启动计时器44
+当前报文发送后nextseqnum为45
+接收方滑动窗口内容为：[ 41 42 43 44 ]
+接收方收到的报文序号为基序号41
+接收方发送确认报文: seqnum = -1, acknum = 41, checksum = 12810, ....................
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+发送方正确收到确认: seqnum = -1, acknum = 41, checksum = 12810, ....................
+发送方滑动窗口内容为 [ 41 42 43 44 ]
+收到的该报文的ack序号为41
+接收方滑动窗口内容为：[ 42 43 44 45 ]
+接收方收到的报文序号为基序号42
+接收方发送确认报文: seqnum = -1, acknum = 42, checksum = 12809, ....................
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+发送方正确收到确认: seqnum = -1, acknum = 42, checksum = 12809, ....................
+发送方滑动窗口内容为 [ 42 43 44 * ]
+收到的该报文的ack序号为42
+接收方滑动窗口内容为：[ 43 44 45 46 ]
+接收方收到的报文序号为基序号43
+接收方发送确认报文: seqnum = -1, acknum = 43, checksum = 12808, ....................
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+超时了
+重发第43个报文
+发送方定时器时间到，重发报文: seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+超时了
+重发第44个报文
+发送方定时器时间到，重发报文: seqnum = 44, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+发送方正确收到确认: seqnum = -1, acknum = 43, checksum = 12808, ....................
+发送方滑动窗口内容为 [ 43 44 * * ]
+收到的该报文的ack序号为43
+接收方滑动窗口内容为：[ 44 45 46 47 ]
+接收方收到的报文序号为基序号44
+接收方发送确认报文: seqnum = -1, acknum = 44, checksum = 12807, ....................
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+发送方正确收到确认: seqnum = -1, acknum = 44, checksum = 12807, ....................
+发送方滑动窗口内容为 [ 44 * * * ]
+收到的该报文的ack序号为44
+接收方滑动窗口内容为：[ 45 46 47 48 ]
+接收方正确收到已确认的过时报文: seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+接收方发送确认报文: seqnum = -1, acknum = 43, checksum = 12808, ....................
+发送方正确收到确认: seqnum = -1, acknum = 43, checksum = 12808, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+接收方滑动窗口内容为：[ 45 46 47 48 ]
+接收方正确收到已确认的过时报文: seqnum = 44, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+接收方发送确认报文: seqnum = -1, acknum = 44, checksum = 12807, ....................
+发送方正确收到确认: seqnum = -1, acknum = 44, checksum = 12807, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+发送方启动计时器45
+当前报文发送后nextseqnum为46
+发送方发送报文: seqnum = 46, acknum = -1, checksum = 43645, UUUUUUUUUUUUUUUUUUUU
+发送方启动计时器46
+当前报文发送后nextseqnum为47
+发送方发送报文: seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+发送方启动计时器47
+当前报文发送后nextseqnum为48
+发送方发送报文: seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+发送方启动计时器48
+当前报文发送后nextseqnum为49
+接收方滑动窗口内容为：[ 45 46 47 48 ]
+接收方收到的报文序号为基序号45
+接收方发送确认报文: seqnum = -1, acknum = 45, checksum = 12806, ....................
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+接收方滑动窗口内容为：[ 46 47 48 49 ]
+接收方收到的报文序号为基序号46
+接收方发送确认报文: seqnum = -1, acknum = 46, checksum = 12805, ....................
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+接收方滑动窗口内容为：[ 47 48 49 50 ]
+接收方收到的报文序号为基序号47
+接收方发送确认报文: seqnum = -1, acknum = 47, checksum = 12804, ....................
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+发送方正确收到确认: seqnum = -1, acknum = 46, checksum = 12805, ....................
+发送方滑动窗口内容为 [ 45 46 47 48 ]
+收到了窗口中的未确认ack46
+接收方滑动窗口内容为：[ 48 49 50 51 ]
+接收方收到的报文序号为基序号48
+接收方发送确认报文: seqnum = -1, acknum = 48, checksum = 12803, ....................
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+超时了
+重发第45个报文
+发送方定时器时间到，重发报文: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+超时了
+重发第47个报文
+发送方定时器时间到，重发报文: seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+超时了
+重发第48个报文
+发送方定时器时间到，重发报文: seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+发送方正确收到确认: seqnum = -1, acknum = 47, checksum = 12804, ....................
+发送方滑动窗口内容为 [ 45 46 47 48 ]
+收到了窗口中的未确认ack47
+接收方滑动窗口内容为：[ 49 50 51 52 ]
+接收方正确收到已确认的过时报文: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+接收方发送确认报文: seqnum = -1, acknum = 45, checksum = 12806, ....................
+发送方正确收到确认: seqnum = -1, acknum = 48, checksum = 12803, ....................
+发送方滑动窗口内容为 [ 45 46 47 48 ]
+收到了窗口中的未确认ack48
+接收方滑动窗口内容为：[ 49 50 51 52 ]
+接收方正确收到已确认的过时报文: seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+接收方发送确认报文: seqnum = -1, acknum = 47, checksum = 12804, ....................
+发送方收到的ACK损坏
+超时了
+重发第45个报文
+发送方定时器时间到，重发报文: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+接收方滑动窗口内容为：[ 49 50 51 52 ]
+接收方正确收到已确认的过时报文: seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+接收方发送确认报文: seqnum = -1, acknum = 48, checksum = 12803, ....................
+接收方滑动窗口内容为：[ 49 50 51 52 ]
+接收方正确收到已确认的过时报文: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+接收方发送确认报文: seqnum = -1, acknum = 45, checksum = 12806, ....................
+发送方收到的ACK损坏
+发送方正确收到确认: seqnum = -1, acknum = 45, checksum = 12806, ....................
+发送方滑动窗口内容为 [ 45 46 47 48 ]
+收到的该报文的ack序号为45
+发送方发送报文: seqnum = 49, acknum = -1, checksum = 35932, XXXXXXXXXXXXXXXXXXXX
+发送方启动计时器49
+当前报文发送后nextseqnum为50
+发送方发送报文: seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+发送方启动计时器50
+当前报文发送后nextseqnum为51
+发送方发送报文: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+发送方启动计时器51
+当前报文发送后nextseqnum为52
+发送方发送报文: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+发送方启动计时器52
+当前报文发送后nextseqnum为53
+接收方滑动窗口内容为：[ 49 50 51 52 ]
+接收方收到的报文序号为基序号49
+接收方发送确认报文: seqnum = -1, acknum = 49, checksum = 12802, ....................
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 50, acknum = -1, checksum = 33361, ZYYYYYYYYYYYYYYYYYYY
+接收方滑动窗口内容为：[ 50 51 52 53 ]
+接收方收到的报文序号为51
+接收方已缓存发送方的报文: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+接收方发送确认报文: seqnum = -1, acknum = 51, checksum = 12800, ....................
+发送方正确收到确认: seqnum = -1, acknum = 49, checksum = 12802, ....................
+发送方滑动窗口内容为 [ 49 50 51 52 ]
+收到的该报文的ack序号为49
+发送方正确收到确认: seqnum = -1, acknum = 51, checksum = 12800, ....................
+发送方滑动窗口内容为 [ 50 51 52 * ]
+收到了窗口中的未确认ack51
+接收方滑动窗口内容为：[ 50 51 52 53 ]
+接收方收到的报文序号为52
+接收方已缓存发送方的报文: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+接收方发送确认报文: seqnum = -1, acknum = 52, checksum = 12799, ....................
+发送方正确收到确认: seqnum = -1, acknum = 52, checksum = 12799, ....................
+发送方滑动窗口内容为 [ 50 51 52 * ]
+收到了窗口中的未确认ack52
+超时了
+重发第50个报文
+发送方定时器时间到，重发报文: seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+接收方滑动窗口内容为：[ 50 51 52 53 ]
+接收方收到的报文序号为基序号50
+接收方发送确认报文: seqnum = -1, acknum = 50, checksum = 12801, ....................
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+发送方正确收到确认: seqnum = -1, acknum = 50, checksum = 12801, ....................
+发送方滑动窗口内容为 [ 50 51 52 * ]
+收到的该报文的ack序号为50
+发送方发送报文: seqnum = 53, acknum = -1, checksum = 26933, BBBBBBBBBBBBBBBBBBBB
+发送方启动计时器53
+当前报文发送后nextseqnum为54
+发送方发送报文: seqnum = 54, acknum = -1, checksum = 24362, CCCCCCCCCCCCCCCCCCCC
+发送方启动计时器54
+当前报文发送后nextseqnum为55
+发送方发送报文: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+发送方启动计时器55
+当前报文发送后nextseqnum为56
+发送方发送报文: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+发送方启动计时器56
+当前报文发送后nextseqnum为57
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 54, acknum = -1, checksum = 24362, DCCCCCCCCCCCCCCCCCCC
+接收方滑动窗口内容为：[ 53 54 55 56 ]
+接收方收到的报文序号为55
+接收方已缓存发送方的报文: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+接收方发送确认报文: seqnum = -1, acknum = 55, checksum = 12796, ....................
+接收方滑动窗口内容为：[ 53 54 55 56 ]
+接收方收到的报文序号为56
+接收方已缓存发送方的报文: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+接收方发送确认报文: seqnum = -1, acknum = 56, checksum = 12795, ....................
+超时了
+重发第53个报文
+发送方定时器时间到，重发报文: seqnum = 53, acknum = -1, checksum = 26933, BBBBBBBBBBBBBBBBBBBB
+超时了
+重发第54个报文
+发送方定时器时间到，重发报文: seqnum = 54, acknum = -1, checksum = 24362, CCCCCCCCCCCCCCCCCCCC
+超时了
+重发第55个报文
+发送方定时器时间到，重发报文: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+超时了
+重发第56个报文
+发送方定时器时间到，重发报文: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+发送方正确收到确认: seqnum = -1, acknum = 55, checksum = 12796, ....................
+发送方滑动窗口内容为 [ 53 54 55 56 ]
+收到了窗口中的未确认ack55
+发送方正确收到确认: seqnum = -1, acknum = 56, checksum = 12795, ....................
+发送方滑动窗口内容为 [ 53 54 55 56 ]
+收到了窗口中的未确认ack56
+接收方滑动窗口内容为：[ 53 54 55 56 ]
+接收方收到的报文序号为基序号53
+接收方发送确认报文: seqnum = -1, acknum = 53, checksum = 12798, ....................
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+发送方正确收到确认: seqnum = -1, acknum = 53, checksum = 12798, ....................
+发送方滑动窗口内容为 [ 53 54 55 56 ]
+收到的该报文的ack序号为53
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 54, acknum = -1, checksum = 24362, DCCCCCCCCCCCCCCCCCCC
+超时了
+重发第54个报文
+发送方定时器时间到，重发报文: seqnum = 54, acknum = -1, checksum = 24362, CCCCCCCCCCCCCCCCCCCC
+接收方滑动窗口内容为：[ 54 55 56 57 ]
+接收方收到的报文序号为55
+接收方已缓存发送方的报文: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+接收方发送确认报文: seqnum = -1, acknum = 55, checksum = 12796, ....................
+接收方滑动窗口内容为：[ 54 55 56 57 ]
+接收方收到的报文序号为56
+接收方已缓存发送方的报文: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+接收方发送确认报文: seqnum = -1, acknum = 56, checksum = 12795, ....................
+接收方滑动窗口内容为：[ 54 55 56 57 ]
+接收方收到的报文序号为基序号54
+接收方发送确认报文: seqnum = -1, acknum = 54, checksum = 12797, ....................
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+发送方正确收到确认: seqnum = -1, acknum = 56, checksum = 12795, ....................
+发送方滑动窗口内容为 [ 54 55 56 * ]
+收到了无用ack
+发送方正确收到确认: seqnum = -1, acknum = 54, checksum = 12797, ....................
+发送方滑动窗口内容为 [ 54 55 56 * ]
+收到的该报文的ack序号为54
+发送方发送报文: seqnum = 57, acknum = -1, checksum = 16649, FFFFFFFFFFFFFFFFFFFF
+发送方启动计时器57
+当前报文发送后nextseqnum为58
+发送方发送报文: seqnum = 58, acknum = -1, checksum = 14078, GGGGGGGGGGGGGGGGGGGG
+发送方启动计时器58
+当前报文发送后nextseqnum为59
+发送方发送报文: seqnum = 59, acknum = -1, checksum = 11507, HHHHHHHHHHHHHHHHHHHH
+发送方启动计时器59
+当前报文发送后nextseqnum为60
+发送方发送报文: seqnum = 60, acknum = -1, checksum = 8936, IIIIIIIIIIIIIIIIIIII
+发送方启动计时器60
+当前报文发送后nextseqnum为61
+接收方滑动窗口内容为：[ 57 58 59 60 ]
+接收方收到的报文序号为基序号57
+接收方发送确认报文: seqnum = -1, acknum = 57, checksum = 12794, ....................
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+发送方正确收到确认: seqnum = -1, acknum = 57, checksum = 12794, ....................
+发送方滑动窗口内容为 [ 57 58 59 60 ]
+收到的该报文的ack序号为57
+接收方滑动窗口内容为：[ 58 59 60 61 ]
+接收方收到的报文序号为基序号58
+接收方发送确认报文: seqnum = -1, acknum = 58, checksum = 12793, ....................
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+发送方正确收到确认: seqnum = -1, acknum = 58, checksum = 12793, ....................
+发送方滑动窗口内容为 [ 58 59 60 * ]
+收到的该报文的ack序号为58
+超时了
+重发第59个报文
+发送方定时器时间到，重发报文: seqnum = 59, acknum = -1, checksum = 11507, HHHHHHHHHHHHHHHHHHHH
+超时了
+重发第60个报文
+发送方定时器时间到，重发报文: seqnum = 60, acknum = -1, checksum = 8936, IIIIIIIIIIIIIIIIIIII
+接收方滑动窗口内容为：[ 59 60 61 62 ]
+接收方收到的报文序号为基序号59
+接收方发送确认报文: seqnum = -1, acknum = 59, checksum = 12792, ....................
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+接收方滑动窗口内容为：[ 60 61 62 63 ]
+接收方收到的报文序号为基序号60
+接收方发送确认报文: seqnum = -1, acknum = 60, checksum = 12791, ....................
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+发送方正确收到确认: seqnum = -1, acknum = 59, checksum = 12792, ....................
+发送方滑动窗口内容为 [ 59 60 * * ]
+收到的该报文的ack序号为59
+接收方滑动窗口内容为：[ 61 62 63 64 ]
+接收方正确收到已确认的过时报文: seqnum = 59, acknum = -1, checksum = 11507, HHHHHHHHHHHHHHHHHHHH
+接收方发送确认报文: seqnum = -1, acknum = 59, checksum = 12792, ....................
+接收方滑动窗口内容为：[ 61 62 63 64 ]
+接收方正确收到已确认的过时报文: seqnum = 60, acknum = -1, checksum = 8936, IIIIIIIIIIIIIIIIIIII
+接收方发送确认报文: seqnum = -1, acknum = 60, checksum = 12791, ....................
+发送方正确收到确认: seqnum = -1, acknum = 60, checksum = 12791, ....................
+发送方滑动窗口内容为 [ 60 * * * ]
+收到的该报文的ack序号为60
+发送方正确收到确认: seqnum = -1, acknum = 59, checksum = 12792, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方正确收到确认: seqnum = -1, acknum = 60, checksum = 12791, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 61, acknum = -1, checksum = 6365, JJJJJJJJJJJJJJJJJJJJ
+发送方启动计时器61
+当前报文发送后nextseqnum为62
+发送方发送报文: seqnum = 62, acknum = -1, checksum = 3794, KKKKKKKKKKKKKKKKKKKK
+发送方启动计时器62
+当前报文发送后nextseqnum为63
+发送方发送报文: seqnum = 63, acknum = -1, checksum = 1223, LLLLLLLLLLLLLLLLLLLL
+发送方启动计时器63
+当前报文发送后nextseqnum为64
+发送方发送报文: seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+发送方启动计时器64
+当前报文发送后nextseqnum为65
+接收方滑动窗口内容为：[ 61 62 63 64 ]
+接收方收到的报文序号为基序号61
+接收方发送确认报文: seqnum = -1, acknum = 61, checksum = 12790, ....................
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = -999999, acknum = -1, checksum = 3794, KKKKKKKKKKKKKKKKKKKK
+发送方正确收到确认: seqnum = -1, acknum = 61, checksum = 12790, ....................
+发送方滑动窗口内容为 [ 61 62 63 64 ]
+收到的该报文的ack序号为61
+接收方滑动窗口内容为：[ 62 63 64 65 ]
+接收方收到的报文序号为63
+接收方已缓存发送方的报文: seqnum = 63, acknum = -1, checksum = 1223, LLLLLLLLLLLLLLLLLLLL
+接收方发送确认报文: seqnum = -1, acknum = 63, checksum = 12788, ....................
+超时了
+重发第62个报文
+发送方定时器时间到，重发报文: seqnum = 62, acknum = -1, checksum = 3794, KKKKKKKKKKKKKKKKKKKK
+超时了
+重发第63个报文
+发送方定时器时间到，重发报文: seqnum = 63, acknum = -1, checksum = 1223, LLLLLLLLLLLLLLLLLLLL
+发送方正确收到确认: seqnum = -1, acknum = 63, checksum = 12788, ....................
+发送方滑动窗口内容为 [ 62 63 64 * ]
+收到了窗口中的未确认ack63
+超时了
+重发第64个报文
+发送方定时器时间到，重发报文: seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+接收方滑动窗口内容为：[ 62 63 64 65 ]
+接收方收到的报文序号为基序号62
+接收方发送确认报文: seqnum = -1, acknum = 62, checksum = 12789, ....................
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 63, acknum = -1, checksum = 1223, MLLLLLLLLLLLLLLLLLLL
+发送方正确收到确认: seqnum = -1, acknum = 62, checksum = 12789, ....................
+发送方滑动窗口内容为 [ 62 63 64 * ]
+收到的该报文的ack序号为62
+超时了
+重发第64个报文
+发送方定时器时间到，重发报文: seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+超时了
+重发第64个报文
+发送方定时器时间到，重发报文: seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+接收方滑动窗口内容为：[ 64 65 66 67 ]
+接收方收到的报文序号为基序号64
+接收方发送确认报文: seqnum = -1, acknum = 64, checksum = 12787, ....................
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+发送方正确收到确认: seqnum = -1, acknum = 64, checksum = 12787, ....................
+发送方滑动窗口内容为 [ 64 * * * ]
+收到的该报文的ack序号为64
+发送方发送报文: seqnum = 65, acknum = -1, checksum = 61616, NNNNNNNNNNNNNNNNNNNN
+发送方启动计时器65
+当前报文发送后nextseqnum为66
+发送方发送报文: seqnum = 66, acknum = -1, checksum = 59045, OOOOOOOOOOOOOOOOOOOO
+发送方启动计时器66
+当前报文发送后nextseqnum为67
+发送方发送报文: seqnum = 67, acknum = -1, checksum = 56474, PPPPPPPPPPPPPPPPPPPP
+发送方启动计时器67
+当前报文发送后nextseqnum为68
+发送方发送报文: seqnum = 68, acknum = -1, checksum = 53903, QQQQQQQQQQQQQQQQQQQQ
+发送方启动计时器68
+当前报文发送后nextseqnum为69
+接收方滑动窗口内容为：[ 65 66 67 68 ]
+接收方收到的报文序号为66
+接收方已缓存发送方的报文: seqnum = 66, acknum = -1, checksum = 59045, OOOOOOOOOOOOOOOOOOOO
+接收方发送确认报文: seqnum = -1, acknum = 66, checksum = 12785, ....................
+发送方正确收到确认: seqnum = -1, acknum = 66, checksum = 12785, ....................
+发送方滑动窗口内容为 [ 65 66 67 68 ]
+收到了窗口中的未确认ack66
+接收方滑动窗口内容为：[ 65 66 67 68 ]
+接收方收到的报文序号为67
+接收方已缓存发送方的报文: seqnum = 67, acknum = -1, checksum = 56474, PPPPPPPPPPPPPPPPPPPP
+接收方发送确认报文: seqnum = -1, acknum = 67, checksum = 12784, ....................
+发送方正确收到确认: seqnum = -1, acknum = 67, checksum = 12784, ....................
+发送方滑动窗口内容为 [ 65 66 67 68 ]
+收到了窗口中的未确认ack67
+超时了
+重发第65个报文
+发送方定时器时间到，重发报文: seqnum = 65, acknum = -1, checksum = 61616, NNNNNNNNNNNNNNNNNNNN
+超时了
+重发第68个报文
+发送方定时器时间到，重发报文: seqnum = 68, acknum = -1, checksum = 53903, QQQQQQQQQQQQQQQQQQQQ
+接收方滑动窗口内容为：[ 65 66 67 68 ]
+接收方收到的报文序号为68
+接收方已缓存发送方的报文: seqnum = 68, acknum = -1, checksum = 53903, QQQQQQQQQQQQQQQQQQQQ
+接收方发送确认报文: seqnum = -1, acknum = 68, checksum = 12783, ....................
+接收方滑动窗口内容为：[ 65 66 67 68 ]
+接收方收到的报文序号为基序号65
+接收方发送确认报文: seqnum = -1, acknum = 65, checksum = 12786, ....................
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+接收方滑动窗口内容为：[ 69 70 71 72 ]
+接收方正确收到已确认的过时报文: seqnum = 68, acknum = -1, checksum = 53903, QQQQQQQQQQQQQQQQQQQQ
+接收方发送确认报文: seqnum = -1, acknum = 68, checksum = 12783, ....................
+发送方正确收到确认: seqnum = -1, acknum = 68, checksum = 12783, ....................
+发送方滑动窗口内容为 [ 65 66 67 68 ]
+收到了窗口中的未确认ack68
+发送方收到的ACK损坏
+超时了
+重发第65个报文
+发送方定时器时间到，重发报文: seqnum = 65, acknum = -1, checksum = 61616, NNNNNNNNNNNNNNNNNNNN
+发送方正确收到确认: seqnum = -1, acknum = 68, checksum = 12783, ....................
+发送方滑动窗口内容为 [ 65 66 67 68 ]
+收到了无用ack
+接收方滑动窗口内容为：[ 69 70 71 72 ]
+接收方正确收到已确认的过时报文: seqnum = 65, acknum = -1, checksum = 61616, NNNNNNNNNNNNNNNNNNNN
+接收方发送确认报文: seqnum = -1, acknum = 65, checksum = 12786, ....................
+发送方正确收到确认: seqnum = -1, acknum = 65, checksum = 12786, ....................
+发送方滑动窗口内容为 [ 65 66 67 68 ]
+收到的该报文的ack序号为65
+发送方发送报文: seqnum = 69, acknum = -1, checksum = 51332, RRRRRRRRRRRRRRRRRRRR
+发送方启动计时器69
+当前报文发送后nextseqnum为70
+发送方发送报文: seqnum = 70, acknum = -1, checksum = 48761, SSSSSSSSSSSSSSSSSSSS
+发送方启动计时器70
+当前报文发送后nextseqnum为71
+发送方发送报文: seqnum = 71, acknum = -1, checksum = 46190, TTTTTTTTTTTTTTTTTTTT
+发送方启动计时器71
+当前报文发送后nextseqnum为72
+发送方发送报文: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+发送方启动计时器72
+当前报文发送后nextseqnum为73
+接收方滑动窗口内容为：[ 69 70 71 72 ]
+接收方收到的报文序号为基序号69
+接收方发送确认报文: seqnum = -1, acknum = 69, checksum = 12782, ....................
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+发送方正确收到确认: seqnum = -1, acknum = 69, checksum = 12782, ....................
+发送方滑动窗口内容为 [ 69 70 71 72 ]
+收到的该报文的ack序号为69
+接收方滑动窗口内容为：[ 70 71 72 73 ]
+接收方收到的报文序号为71
+接收方已缓存发送方的报文: seqnum = 71, acknum = -1, checksum = 46190, TTTTTTTTTTTTTTTTTTTT
+接收方发送确认报文: seqnum = -1, acknum = 71, checksum = 12780, ....................
+发送方正确收到确认: seqnum = -1, acknum = 71, checksum = 12780, ....................
+发送方滑动窗口内容为 [ 70 71 72 * ]
+收到了窗口中的未确认ack71
+超时了
+重发第70个报文
+发送方定时器时间到，重发报文: seqnum = 70, acknum = -1, checksum = 48761, SSSSSSSSSSSSSSSSSSSS
+超时了
+重发第72个报文
+发送方定时器时间到，重发报文: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+接收方滑动窗口内容为：[ 70 71 72 73 ]
+接收方收到的报文序号为72
+接收方已缓存发送方的报文: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+接收方发送确认报文: seqnum = -1, acknum = 72, checksum = 12779, ....................
+发送方正确收到确认: seqnum = -1, acknum = 72, checksum = 12779, ....................
+发送方滑动窗口内容为 [ 70 71 72 * ]
+收到了窗口中的未确认ack72
+接收方滑动窗口内容为：[ 70 71 72 73 ]
+接收方收到的报文序号为基序号70
+接收方发送确认报文: seqnum = -1, acknum = 70, checksum = 12781, ....................
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+接收方滑动窗口内容为：[ 73 74 75 76 ]
+接收方正确收到已确认的过时报文: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+接收方发送确认报文: seqnum = -1, acknum = 72, checksum = 12779, ....................
+发送方正确收到确认: seqnum = -1, acknum = 70, checksum = 12781, ....................
+发送方滑动窗口内容为 [ 70 71 72 * ]
+收到的该报文的ack序号为70
+发送方正确收到确认: seqnum = -1, acknum = 72, checksum = 12779, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 73, acknum = -1, checksum = 41048, VVVVVVVVVVVVVVVVVVVV
+发送方启动计时器73
+当前报文发送后nextseqnum为74
+发送方发送报文: seqnum = 74, acknum = -1, checksum = 38477, WWWWWWWWWWWWWWWWWWWW
+发送方启动计时器74
+当前报文发送后nextseqnum为75
+发送方发送报文: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+发送方启动计时器75
+当前报文发送后nextseqnum为76
+发送方发送报文: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+发送方启动计时器76
+当前报文发送后nextseqnum为77
+接收方滑动窗口内容为：[ 73 74 75 76 ]
+接收方收到的报文序号为基序号73
+接收方发送确认报文: seqnum = -1, acknum = 73, checksum = 12778, ....................
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+接收方滑动窗口内容为：[ 74 75 76 77 ]
+接收方收到的报文序号为基序号74
+接收方发送确认报文: seqnum = -1, acknum = 74, checksum = 12777, ....................
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+接收方滑动窗口内容为：[ 75 76 77 78 ]
+接收方收到的报文序号为基序号75
+接收方发送确认报文: seqnum = -1, acknum = 75, checksum = 12776, ....................
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+发送方正确收到确认: seqnum = -1, acknum = 73, checksum = 12778, ....................
+发送方滑动窗口内容为 [ 73 74 75 76 ]
+收到的该报文的ack序号为73
+发送方正确收到确认: seqnum = -1, acknum = 74, checksum = 12777, ....................
+发送方滑动窗口内容为 [ 74 75 76 * ]
+收到的该报文的ack序号为74
+接收方滑动窗口内容为：[ 76 77 78 79 ]
+接收方收到的报文序号为基序号76
+接收方发送确认报文: seqnum = -1, acknum = 76, checksum = 12775, ....................
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+超时了
+重发第75个报文
+发送方定时器时间到，重发报文: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+超时了
+重发第76个报文
+发送方定时器时间到，重发报文: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+发送方正确收到确认: seqnum = -1, acknum = 75, checksum = 12776, ....................
+发送方滑动窗口内容为 [ 75 76 * * ]
+收到的该报文的ack序号为75
+发送方正确收到确认: seqnum = -1, acknum = 76, checksum = 12775, ....................
+发送方滑动窗口内容为 [ 76 * * * ]
+收到的该报文的ack序号为76
+接收方滑动窗口内容为：[ 77 78 79 80 ]
+接收方正确收到已确认的过时报文: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+接收方发送确认报文: seqnum = -1, acknum = 75, checksum = 12776, ....................
+发送方正确收到确认: seqnum = -1, acknum = 75, checksum = 12776, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+接收方滑动窗口内容为：[ 77 78 79 80 ]
+接收方正确收到已确认的过时报文: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+接收方发送确认报文: seqnum = -1, acknum = 76, checksum = 12775, ....................
+发送方正确收到确认: seqnum = -1, acknum = 76, checksum = 12775, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 77, acknum = -1, checksum = 30764, ZZZZZZZZZZZZZZZZZZZZ
+发送方启动计时器77
+当前报文发送后nextseqnum为78
+发送方发送报文: seqnum = 78, acknum = -1, checksum = 29478, AAAAAAAAAAAAAAAAAAAA
+发送方启动计时器78
+当前报文发送后nextseqnum为79
+发送方发送报文: seqnum = 79, acknum = -1, checksum = 26907, BBBBBBBBBBBBBBBBBBBB
+发送方启动计时器79
+当前报文发送后nextseqnum为80
+发送方发送报文: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+发送方启动计时器80
+当前报文发送后nextseqnum为81
+接收方滑动窗口内容为：[ 77 78 79 80 ]
+接收方收到的报文序号为基序号77
+接收方发送确认报文: seqnum = -1, acknum = 77, checksum = 12774, ....................
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+发送方正确收到确认: seqnum = -1, acknum = 77, checksum = 12774, ....................
+发送方滑动窗口内容为 [ 77 78 79 80 ]
+收到的该报文的ack序号为77
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 78, acknum = -1, checksum = 29478, BAAAAAAAAAAAAAAAAAAA
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 80, acknum = -1, checksum = 24336, DCCCCCCCCCCCCCCCCCCC
+超时了
+重发第78个报文
+发送方定时器时间到，重发报文: seqnum = 78, acknum = -1, checksum = 29478, AAAAAAAAAAAAAAAAAAAA
+超时了
+重发第79个报文
+发送方定时器时间到，重发报文: seqnum = 79, acknum = -1, checksum = 26907, BBBBBBBBBBBBBBBBBBBB
+超时了
+重发第80个报文
+发送方定时器时间到，重发报文: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+接收方滑动窗口内容为：[ 78 79 80 81 ]
+接收方收到的报文序号为基序号78
+接收方发送确认报文: seqnum = -1, acknum = 78, checksum = 12773, ....................
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+接收方滑动窗口内容为：[ 79 80 81 82 ]
+接收方收到的报文序号为基序号79
+接收方发送确认报文: seqnum = -1, acknum = 79, checksum = 12772, ....................
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+接收方滑动窗口内容为：[ 80 81 82 83 ]
+接收方收到的报文序号为基序号80
+接收方发送确认报文: seqnum = -1, acknum = 80, checksum = 12771, ....................
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+发送方正确收到确认: seqnum = -1, acknum = 78, checksum = 12773, ....................
+发送方滑动窗口内容为 [ 78 79 80 * ]
+收到的该报文的ack序号为78
+超时了
+重发第79个报文
+发送方定时器时间到，重发报文: seqnum = 79, acknum = -1, checksum = 26907, BBBBBBBBBBBBBBBBBBBB
+超时了
+重发第80个报文
+发送方定时器时间到，重发报文: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+发送方正确收到确认: seqnum = -1, acknum = 79, checksum = 12772, ....................
+发送方滑动窗口内容为 [ 79 80 * * ]
+收到的该报文的ack序号为79
+接收方滑动窗口内容为：[ 81 82 83 84 ]
+接收方正确收到已确认的过时报文: seqnum = 79, acknum = -1, checksum = 26907, BBBBBBBBBBBBBBBBBBBB
+接收方发送确认报文: seqnum = -1, acknum = 79, checksum = 12772, ....................
+发送方正确收到确认: seqnum = -1, acknum = 80, checksum = 12771, ....................
+发送方滑动窗口内容为 [ 80 * * * ]
+收到的该报文的ack序号为80
+发送方正确收到确认: seqnum = -1, acknum = 79, checksum = 12772, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 81, acknum = -1, checksum = 21765, DDDDDDDDDDDDDDDDDDDD
+发送方启动计时器81
+当前报文发送后nextseqnum为82
+发送方发送报文: seqnum = 82, acknum = -1, checksum = 19194, EEEEEEEEEEEEEEEEEEEE
+发送方启动计时器82
+当前报文发送后nextseqnum为83
+发送方发送报文: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+发送方启动计时器83
+当前报文发送后nextseqnum为84
+发送方发送报文: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+发送方启动计时器84
+当前报文发送后nextseqnum为85
+接收方滑动窗口内容为：[ 81 82 83 84 ]
+接收方收到的报文序号为基序号81
+接收方发送确认报文: seqnum = -1, acknum = 81, checksum = 12770, ....................
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+发送方正确收到确认: seqnum = -1, acknum = 81, checksum = 12770, ....................
+发送方滑动窗口内容为 [ 81 82 83 84 ]
+收到的该报文的ack序号为81
+超时了
+重发第82个报文
+发送方定时器时间到，重发报文: seqnum = 82, acknum = -1, checksum = 19194, EEEEEEEEEEEEEEEEEEEE
+超时了
+重发第83个报文
+发送方定时器时间到，重发报文: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+接收方滑动窗口内容为：[ 82 83 84 85 ]
+接收方收到的报文序号为基序号82
+接收方发送确认报文: seqnum = -1, acknum = 82, checksum = 12769, ....................
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+超时了
+重发第84个报文
+发送方定时器时间到，重发报文: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+发送方正确收到确认: seqnum = -1, acknum = 82, checksum = 12769, ....................
+发送方滑动窗口内容为 [ 82 83 84 * ]
+收到的该报文的ack序号为82
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = -999999, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+接收方滑动窗口内容为：[ 83 84 85 86 ]
+接收方收到的报文序号为84
+接收方已缓存发送方的报文: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+接收方发送确认报文: seqnum = -1, acknum = 84, checksum = 12767, ....................
+接收方滑动窗口内容为：[ 83 84 85 86 ]
+接收方正确收到已确认的过时报文: seqnum = 82, acknum = -1, checksum = 19194, EEEEEEEEEEEEEEEEEEEE
+接收方发送确认报文: seqnum = -1, acknum = 82, checksum = 12769, ....................
+接收方滑动窗口内容为：[ 83 84 85 86 ]
+接收方收到的报文序号为基序号83
+接收方发送确认报文: seqnum = -1, acknum = 83, checksum = 12768, ....................
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+超时了
+重发第83个报文
+发送方定时器时间到，重发报文: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+接收方滑动窗口内容为：[ 85 86 87 88 ]
+接收方正确收到已确认的过时报文: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+接收方发送确认报文: seqnum = -1, acknum = 84, checksum = 12767, ....................
+超时了
+重发第84个报文
+发送方定时器时间到，重发报文: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+接收方滑动窗口内容为：[ 85 86 87 88 ]
+接收方正确收到已确认的过时报文: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+接收方发送确认报文: seqnum = -1, acknum = 83, checksum = 12768, ....................
+发送方正确收到确认: seqnum = -1, acknum = 84, checksum = 12767, ....................
+发送方滑动窗口内容为 [ 83 84 * * ]
+收到了窗口中的未确认ack84
+接收方滑动窗口内容为：[ 85 86 87 88 ]
+接收方正确收到已确认的过时报文: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+接收方发送确认报文: seqnum = -1, acknum = 84, checksum = 12767, ....................
+发送方正确收到确认: seqnum = -1, acknum = 84, checksum = 12767, ....................
+发送方滑动窗口内容为 [ 83 84 * * ]
+收到了无用ack
+超时了
+重发第83个报文
+发送方定时器时间到，重发报文: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+发送方正确收到确认: seqnum = -1, acknum = 83, checksum = 12768, ....................
+发送方滑动窗口内容为 [ 83 84 * * ]
+收到的该报文的ack序号为83
+发送方收到的ACK损坏
+接收方滑动窗口内容为：[ 85 86 87 88 ]
+接收方正确收到已确认的过时报文: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+接收方发送确认报文: seqnum = -1, acknum = 83, checksum = 12768, ....................
+发送方正确收到确认: seqnum = -1, acknum = 83, checksum = 12768, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 85, acknum = -1, checksum = 11481, HHHHHHHHHHHHHHHHHHHH
+发送方启动计时器85
+当前报文发送后nextseqnum为86
+发送方发送报文: seqnum = 86, acknum = -1, checksum = 8910, IIIIIIIIIIIIIIIIIIII
+发送方启动计时器86
+当前报文发送后nextseqnum为87
+发送方发送报文: seqnum = 87, acknum = -1, checksum = 6339, JJJJJJJJJJJJJJJJJJJJ
+发送方启动计时器87
+当前报文发送后nextseqnum为88
+发送方发送报文: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+发送方启动计时器88
+当前报文发送后nextseqnum为89
+接收方滑动窗口内容为：[ 85 86 87 88 ]
+接收方收到的报文序号为基序号85
+接收方发送确认报文: seqnum = -1, acknum = 85, checksum = 12766, ....................
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+接收方滑动窗口内容为：[ 86 87 88 89 ]
+接收方收到的报文序号为基序号86
+接收方发送确认报文: seqnum = -1, acknum = 86, checksum = 12765, ....................
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+发送方正确收到确认: seqnum = -1, acknum = 85, checksum = 12766, ....................
+发送方滑动窗口内容为 [ 85 86 87 88 ]
+收到的该报文的ack序号为85
+接收方滑动窗口内容为：[ 87 88 89 90 ]
+接收方收到的报文序号为88
+接收方已缓存发送方的报文: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+接收方发送确认报文: seqnum = -1, acknum = 88, checksum = 12763, ....................
+发送方正确收到确认: seqnum = -1, acknum = 86, checksum = 12765, ....................
+发送方滑动窗口内容为 [ 86 87 88 * ]
+收到的该报文的ack序号为86
+超时了
+重发第87个报文
+发送方定时器时间到，重发报文: seqnum = 87, acknum = -1, checksum = 6339, JJJJJJJJJJJJJJJJJJJJ
+超时了
+重发第88个报文
+发送方定时器时间到，重发报文: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+接收方滑动窗口内容为：[ 87 88 89 90 ]
+接收方收到的报文序号为基序号87
+接收方发送确认报文: seqnum = -1, acknum = 87, checksum = 12764, ....................
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+接收方滑动窗口内容为：[ 89 90 91 92 ]
+接收方正确收到已确认的过时报文: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+接收方发送确认报文: seqnum = -1, acknum = 88, checksum = 12763, ....................
+发送方正确收到确认: seqnum = -1, acknum = 87, checksum = 12764, ....................
+发送方滑动窗口内容为 [ 87 88 * * ]
+收到的该报文的ack序号为87
+发送方正确收到确认: seqnum = -1, acknum = 88, checksum = 12763, ....................
+发送方滑动窗口内容为 [ 88 * * * ]
+收到的该报文的ack序号为88
+发送方发送报文: seqnum = 89, acknum = -1, checksum = 1197, LLLLLLLLLLLLLLLLLLLL
+发送方启动计时器89
+当前报文发送后nextseqnum为90
+发送方发送报文: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+发送方启动计时器90
+当前报文发送后nextseqnum为91
+发送方发送报文: seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+发送方启动计时器91
+当前报文发送后nextseqnum为92
+发送方发送报文: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+发送方启动计时器92
+当前报文发送后nextseqnum为93
+接收方滑动窗口内容为：[ 89 90 91 92 ]
+接收方收到的报文序号为基序号89
+接收方发送确认报文: seqnum = -1, acknum = 89, checksum = 12762, ....................
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+接收方滑动窗口内容为：[ 90 91 92 93 ]
+接收方收到的报文序号为基序号90
+接收方发送确认报文: seqnum = -1, acknum = 90, checksum = 12761, ....................
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+发送方正确收到确认: seqnum = -1, acknum = 89, checksum = 12762, ....................
+发送方滑动窗口内容为 [ 89 90 91 92 ]
+收到的该报文的ack序号为89
+接收方滑动窗口内容为：[ 91 92 93 94 ]
+接收方收到的报文序号为基序号91
+接收方发送确认报文: seqnum = -1, acknum = 91, checksum = 12760, ....................
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+超时了
+重发第90个报文
+发送方定时器时间到，重发报文: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+超时了
+重发第91个报文
+发送方定时器时间到，重发报文: seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+超时了
+重发第92个报文
+发送方定时器时间到，重发报文: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+发送方正确收到确认: seqnum = -1, acknum = 91, checksum = 12760, ....................
+发送方滑动窗口内容为 [ 90 91 92 * ]
+收到了窗口中的未确认ack91
+接收方滑动窗口内容为：[ 92 93 94 95 ]
+接收方收到的报文序号为基序号92
+接收方发送确认报文: seqnum = -1, acknum = 92, checksum = 12759, ....................
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+发送方正确收到确认: seqnum = -1, acknum = 92, checksum = 12759, ....................
+发送方滑动窗口内容为 [ 90 91 92 * ]
+收到了窗口中的未确认ack92
+接收方滑动窗口内容为：[ 93 94 95 96 ]
+接收方正确收到已确认的过时报文: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+接收方发送确认报文: seqnum = -1, acknum = 90, checksum = 12761, ....................
+超时了
+重发第90个报文
+发送方定时器时间到，重发报文: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+发送方正确收到确认: seqnum = -1, acknum = 90, checksum = 12761, ....................
+发送方滑动窗口内容为 [ 90 91 92 * ]
+收到的该报文的ack序号为90
+接收方滑动窗口内容为：[ 93 94 95 96 ]
+接收方正确收到已确认的过时报文: seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+接收方发送确认报文: seqnum = -1, acknum = 91, checksum = 12760, ....................
+发送方正确收到确认: seqnum = -1, acknum = 91, checksum = 12760, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+接收方滑动窗口内容为：[ 93 94 95 96 ]
+接收方正确收到已确认的过时报文: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+接收方发送确认报文: seqnum = -1, acknum = 92, checksum = 12759, ....................
+接收方滑动窗口内容为：[ 93 94 95 96 ]
+接收方正确收到已确认的过时报文: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+接收方发送确认报文: seqnum = -1, acknum = 90, checksum = 12761, ....................
+发送方正确收到确认: seqnum = -1, acknum = 92, checksum = 12759, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+发送方启动计时器93
+当前报文发送后nextseqnum为94
+发送方发送报文: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+发送方启动计时器94
+当前报文发送后nextseqnum为95
+发送方发送报文: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+发送方启动计时器95
+当前报文发送后nextseqnum为96
+发送方发送报文: seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+发送方启动计时器96
+当前报文发送后nextseqnum为97
+接收方滑动窗口内容为：[ 93 94 95 96 ]
+接收方收到的报文序号为基序号93
+接收方发送确认报文: seqnum = -1, acknum = 93, checksum = 12758, ....................
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+发送方收到的ACK损坏
+接收方滑动窗口内容为：[ 94 95 96 97 ]
+接收方收到的报文序号为基序号94
+接收方发送确认报文: seqnum = -1, acknum = 94, checksum = 12757, ....................
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+接收方滑动窗口内容为：[ 95 96 97 98 ]
+接收方收到的报文序号为基序号95
+接收方发送确认报文: seqnum = -1, acknum = 95, checksum = 12756, ....................
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+超时了
+重发第93个报文
+发送方定时器时间到，重发报文: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+超时了
+重发第94个报文
+发送方定时器时间到，重发报文: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+发送方收到的ACK损坏
+超时了
+重发第95个报文
+发送方定时器时间到，重发报文: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+超时了
+重发第96个报文
+发送方定时器时间到，重发报文: seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+接收方滑动窗口内容为：[ 96 97 98 99 ]
+接收方收到的报文序号为基序号96
+接收方发送确认报文: seqnum = -1, acknum = 96, checksum = 12755, ....................
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+发送方收到的ACK损坏
+接收方滑动窗口内容为：[ 97 98 99 100 ]
+接收方正确收到已确认的过时报文: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+接收方发送确认报文: seqnum = -1, acknum = 93, checksum = 12758, ....................
+发送方正确收到确认: seqnum = -1, acknum = 96, checksum = 12755, ....................
+发送方滑动窗口内容为 [ 93 94 95 96 ]
+收到了窗口中的未确认ack96
+接收方滑动窗口内容为：[ 97 98 99 100 ]
+接收方正确收到已确认的过时报文: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+接收方发送确认报文: seqnum = -1, acknum = 94, checksum = 12757, ....................
+发送方正确收到确认: seqnum = -1, acknum = 93, checksum = 12758, ....................
+发送方滑动窗口内容为 [ 93 94 95 96 ]
+收到的该报文的ack序号为93
+接收方滑动窗口内容为：[ 97 98 99 100 ]
+接收方正确收到已确认的过时报文: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+接收方发送确认报文: seqnum = -1, acknum = 95, checksum = 12756, ....................
+超时了
+重发第94个报文
+发送方定时器时间到，重发报文: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+超时了
+重发第95个报文
+发送方定时器时间到，重发报文: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+发送方正确收到确认: seqnum = -1, acknum = 94, checksum = 12757, ....................
+发送方滑动窗口内容为 [ 94 95 96 * ]
+收到的该报文的ack序号为94
+接收方滑动窗口内容为：[ 97 98 99 100 ]
+接收方正确收到已确认的过时报文: seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+接收方发送确认报文: seqnum = -1, acknum = 96, checksum = 12755, ....................
+接收方滑动窗口内容为：[ 97 98 99 100 ]
+接收方正确收到已确认的过时报文: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+接收方发送确认报文: seqnum = -1, acknum = 94, checksum = 12757, ....................
+发送方正确收到确认: seqnum = -1, acknum = 95, checksum = 12756, ....................
+发送方滑动窗口内容为 [ 95 96 * * ]
+收到的该报文的ack序号为95
+接收方滑动窗口内容为：[ 97 98 99 100 ]
+接收方正确收到已确认的过时报文: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+接收方发送确认报文: seqnum = -1, acknum = 95, checksum = 12756, ....................
+发送方正确收到确认: seqnum = -1, acknum = 96, checksum = 12755, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方正确收到确认: seqnum = -1, acknum = 94, checksum = 12757, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方正确收到确认: seqnum = -1, acknum = 95, checksum = 12756, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 97, acknum = -1, checksum = 46164, TTTTTTTTTTTTTTTTTTTT
+发送方启动计时器97
+当前报文发送后nextseqnum为98
+发送方发送报文: seqnum = 98, acknum = -1, checksum = 43593, UUUUUUUUUUUUUUUUUUUU
+发送方启动计时器98
+当前报文发送后nextseqnum为99
+发送方发送报文: seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+发送方启动计时器99
+当前报文发送后nextseqnum为100
+发送方发送报文: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+发送方启动计时器100
+当前报文发送后nextseqnum为101
+接收方滑动窗口内容为：[ 97 98 99 100 ]
+接收方收到的报文序号为基序号97
+接收方发送确认报文: seqnum = -1, acknum = 97, checksum = 12754, ....................
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+接收方滑动窗口内容为：[ 98 99 100 101 ]
+接收方收到的报文序号为基序号98
+接收方发送确认报文: seqnum = -1, acknum = 98, checksum = 12753, ....................
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+发送方正确收到确认: seqnum = -1, acknum = 97, checksum = 12754, ....................
+发送方滑动窗口内容为 [ 97 98 99 100 ]
+收到的该报文的ack序号为97
+接收方滑动窗口内容为：[ 99 100 101 102 ]
+接收方收到的报文序号为基序号99
+接收方发送确认报文: seqnum = -1, acknum = 99, checksum = 12752, ....................
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+接收方滑动窗口内容为：[ 100 101 102 103 ]
+接收方收到的报文序号为基序号100
+接收方发送确认报文: seqnum = -1, acknum = 100, checksum = 12751, ....................
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+发送方正确收到确认: seqnum = -1, acknum = 98, checksum = 12753, ....................
+发送方滑动窗口内容为 [ 98 99 100 * ]
+收到的该报文的ack序号为98
+发送方收到的ACK损坏
+超时了
+重发第99个报文
+发送方定时器时间到，重发报文: seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+超时了
+重发第100个报文
+发送方定时器时间到，重发报文: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+接收方没有正确收到发送方的报文,数据校验错误: seqnum = 99, acknum = -1, checksum = 41022, WVVVVVVVVVVVVVVVVVVV
+接收方滑动窗口内容为：[ 101 102 103 104 ]
+接收方正确收到已确认的过时报文: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+接收方发送确认报文: seqnum = -1, acknum = 100, checksum = 12751, ....................
+超时了
+重发第99个报文
+发送方定时器时间到，重发报文: seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+超时了
+重发第100个报文
+发送方定时器时间到，重发报文: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+发送方正确收到确认: seqnum = -1, acknum = 100, checksum = 12751, ....................
+发送方滑动窗口内容为 [ 99 100 * * ]
+收到了窗口中的未确认ack100
+接收方滑动窗口内容为：[ 101 102 103 104 ]
+接收方正确收到已确认的过时报文: seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+接收方发送确认报文: seqnum = -1, acknum = 99, checksum = 12752, ....................
+接收方滑动窗口内容为：[ 101 102 103 104 ]
+接收方正确收到已确认的过时报文: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+接收方发送确认报文: seqnum = -1, acknum = 100, checksum = 12751, ....................
+发送方正确收到确认: seqnum = -1, acknum = 99, checksum = 12752, ....................
+发送方滑动窗口内容为 [ 99 100 * * ]
+收到的该报文的ack序号为99
+发送方正确收到确认: seqnum = -1, acknum = 100, checksum = 12751, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方发送报文: seqnum = 101, acknum = -1, checksum = 35880, XXXXXXXXXXXXXXXXXXXX
+发送方启动计时器101
+当前报文发送后nextseqnum为102
+发送方发送报文: seqnum = 102, acknum = -1, checksum = 33309, YYYYYYYYYYYYYYYYYYYY
+发送方启动计时器102
+当前报文发送后nextseqnum为103
+发送方发送报文: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+发送方启动计时器103
+当前报文发送后nextseqnum为104
+发送方发送报文: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+发送方启动计时器104
+当前报文发送后nextseqnum为105
+接收方滑动窗口内容为：[ 101 102 103 104 ]
+接收方收到的报文序号为基序号101
+接收方发送确认报文: seqnum = -1, acknum = 101, checksum = 12750, ....................
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+接收方滑动窗口内容为：[ 102 103 104 105 ]
+接收方收到的报文序号为基序号102
+接收方发送确认报文: seqnum = -1, acknum = 102, checksum = 12749, ....................
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+发送方收到的ACK损坏
+发送方正确收到确认: seqnum = -1, acknum = 102, checksum = 12749, ....................
+发送方滑动窗口内容为 [ 101 102 103 104 ]
+收到了窗口中的未确认ack102
+接收方滑动窗口内容为：[ 103 104 105 106 ]
+接收方收到的报文序号为基序号103
+接收方发送确认报文: seqnum = -1, acknum = 103, checksum = 12748, ....................
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+超时了
+重发第101个报文
+发送方定时器时间到，重发报文: seqnum = 101, acknum = -1, checksum = 35880, XXXXXXXXXXXXXXXXXXXX
+发送方收到的ACK损坏
+接收方滑动窗口内容为：[ 104 105 106 107 ]
+接收方收到的报文序号为基序号104
+接收方发送确认报文: seqnum = -1, acknum = 104, checksum = 12747, ....................
+******模拟网络环境******：向上递交给应用层数据：EOF                  
+超时了
+重发第103个报文
+发送方定时器时间到，重发报文: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+超时了
+重发第104个报文
+发送方定时器时间到，重发报文: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+接收方滑动窗口内容为：[ 105 106 107 108 ]
+接收方正确收到已确认的过时报文: seqnum = 101, acknum = -1, checksum = 35880, XXXXXXXXXXXXXXXXXXXX
+接收方发送确认报文: seqnum = -1, acknum = 101, checksum = 12750, ....................
+发送方正确收到确认: seqnum = -1, acknum = 104, checksum = 12747, ....................
+发送方滑动窗口内容为 [ 101 102 103 104 ]
+收到了窗口中的未确认ack104
+发送方正确收到确认: seqnum = -1, acknum = 101, checksum = 12750, ....................
+发送方滑动窗口内容为 [ 101 102 103 104 ]
+收到的该报文的ack序号为101
+接收方滑动窗口内容为：[ 105 106 107 108 ]
+接收方正确收到已确认的过时报文: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+接收方发送确认报文: seqnum = -1, acknum = 103, checksum = 12748, ....................
+超时了
+重发第103个报文
+发送方定时器时间到，重发报文: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+接收方滑动窗口内容为：[ 105 106 107 108 ]
+接收方正确收到已确认的过时报文: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+接收方发送确认报文: seqnum = -1, acknum = 104, checksum = 12747, ....................
+发送方正确收到确认: seqnum = -1, acknum = 103, checksum = 12748, ....................
+发送方滑动窗口内容为 [ 103 104 * * ]
+收到的该报文的ack序号为103
+接收方滑动窗口内容为：[ 105 106 107 108 ]
+接收方正确收到已确认的过时报文: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+接收方发送确认报文: seqnum = -1, acknum = 103, checksum = 12748, ....................
+发送方正确收到确认: seqnum = -1, acknum = 104, checksum = 12747, ....................
+发送方滑动窗口内容为 [ * * * * ]
+收到了无用ack
+发送方收到的ACK损坏
+******模拟网络环境******：模拟网络环境已发送完应用层数据，关闭模拟网络环境
+已发送应用层Message个数: 105
+发送到网络层数据Packet个数: 214
+网络层丢失的数据Packet个数: 22
+网络层损坏的数据pakcet个数:24
+发送到网络层确认Packet个数:168
+网络层丢失的确认Packet个数: 12
+网络层损坏的确认Packet个数: 17
+
