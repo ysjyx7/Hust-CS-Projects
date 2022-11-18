@@ -12,7 +12,8 @@
 
 // TODO: 在此处引用程序需要的其他头文件
 #pragma comment (lib,"..\\netsimlib.lib")
-
+#define SeqLength 8
+#define N 4
 #include <iostream>
 using namespace std;
 

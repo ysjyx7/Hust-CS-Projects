@@ -4,9 +4,10 @@
 class StopWaitRdtSender :public RdtSender
 {
 private:
+	int base;
 	int expectSequenceNumberSend;	// 下一个发送序号 
 	bool waitingState;				// 是否处于等待Ack的状态
-	Packet packetWaitingAck;		//已发送并等待Ack的数据包
+	Packet packetWaitingAck[SeqLength];		//已发送并等待Ack的数据包
 
 public:
 

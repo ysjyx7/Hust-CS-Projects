@@ -37,7 +37,8 @@ void StopWaitRdtReceiver::receive(const Packet &packet) {
 		pUtils->printPacket("接收方发送确认报文", lastAckPkt);
 		pns->sendToNetworkLayer(SENDER, lastAckPkt);	//调用模拟网络环境的sendToNetworkLayer，通过网络层发送确认报文到对方
 
-		this->expectSequenceNumberRcvd = 1 - this->expectSequenceNumberRcvd; //接收序号在0-1之间切换
+		//this->expectSequenceNumberRcvd = 1 - this->expectSequenceNumberRcvd; //接收序号在0-1之间切换
+		expectSequenceNumberRcvd++;
 	}
 	else {
 		if (checkSum != packet.checksum) {
