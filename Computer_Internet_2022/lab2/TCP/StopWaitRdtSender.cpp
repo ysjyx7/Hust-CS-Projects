@@ -61,7 +61,7 @@ void StopWaitRdtSender::receive(const Packet& ackPkt) {
 		//this->expectSequenceNumberSend = 1 - this->expectSequenceNumberSend;			//下一个发送序号在0-1之间切换
 		//this->waitingState = false;
 		pUtils->printPacket("发送方正确收到确认", ackPkt);
-		for (int i = base + N; i < base + 8; i++) {
+		for (int i = base + N; i < base + SeqLength; i++) {
 			packetWaitingAck[i % SeqLength].seqnum = -1;
 		}
 		cout << "发送方滑动窗口内容为 " << '[' << ' ';
