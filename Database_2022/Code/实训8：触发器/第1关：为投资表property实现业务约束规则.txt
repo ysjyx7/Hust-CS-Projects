@@ -1,0 +1,46 @@
+use finance1;
+drop trigger if exists before_property_inserted;
+-- 请在适当的地方补充代码，完成任务要求：
+delimiter $$
+CREATE TRIGGER before_property_inserted BEFORE INSERT ON property
+FOR EACH ROW 
+BEGIN
+declare err varchar(40);
+if new.pro_type!=1 and new.pro_type!=2 and new.pro_type!=3 then
+    set err = concat('type ',new.pro_type,' is illegal!');
+	signal sqlstate '45000' set message_text = err;
+end if;
+if new.pro_type=1 and not exists(select * from finances_product where finances_product.p_id=new.pro_pif_id) then
+    set err = concat('finances product #',new.pro_pif_id,' not found!');
+	signal sqlstate '45000' set message_text = err;
+end if;
+if new.pro_type=2 and not exists(select * from insurance where i_id=new.pro_pif_id) then
+    set err = concat('insurance #',new.pro_pif_id,' not found!');
+	signal sqlstate '45000' set message_text = err;
+end if;
+if new.pro_type=3 and not exists(select * from fund where f_id=new.pro_pif_id) then 
+    set err = concat('fund #',new.pro_pif_id,' not found!');
+	signal sqlstate '45000' set message_text = err;
+end if;
+
+
+END$$
+ 
+delimiter ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

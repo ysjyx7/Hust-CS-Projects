@@ -1,0 +1,33 @@
+-- 13) 综合客户表(client)、资产表(property)、理财产品表(finances_product)、
+--     保险表(insurance)、基金表(fund)和投资资产表(property)，
+--     列出所有客户的编号、名称和总资产，总资产命名为total_property。
+--     总资产为储蓄卡余额，投资总额，投资总收益的和，再扣除信用卡透支的金额
+--     (信用卡余额即为透支金额)。客户总资产包括被冻结的资产。
+--    请用一条SQL语句实现该查询：
+
+create view licai as
+  select ifnull(sum(pro.pro_quantity*p.p_amount),0) as 理财,pro.pro_c_id from property as pro left join finances_product as p on p.p_id=pro.pro_pif_id and pro.pro_type=1 group by pro.pro_c_id;
+
+create view baoxian as
+  select ifnull(sum(pro.pro_quantity*i.i_amount),0) as 保险,pro.pro_c_id from property as pro left join insurance as i on i.i_id=pro.pro_pif_id and pro.pro_type=2 group by pro.pro_c_id;
+
+ create view jijin as
+  select ifnull(sum(pro.pro_quantity*f.f_amount),0) as 基金,pro.pro_c_id from property as pro left join fund as f on f.f_id=pro.pro_pif_id and pro.pro_type=3 group by pro.pro_c_id; 
+
+create view touzizonge as
+select c.c_name,c.c_id,ifnull(licai.理财+baoxian.保险+jijin.基金,0) total_amount from ((client as c left join licai on c.c_id=licai.pro_c_id) left join baoxian on licai.pro_c_id=baoxian.pro_c_id) left join jijin on baoxian.pro_c_id=jijin.pro_c_id order by total_amount desc;
+
+create view chuxu as
+select ifnull(sum(b.b_balance),0) total_chuxu,c.c_id from client as c left join bank_card as b on b.b_c_id=c.c_id and b.b_type='储蓄卡' group by c.c_id;
+
+create view xinyong as
+select ifnull(sum(b.b_balance),0) total_xinyong,c.c_id from client as c left join bank_card as b on b.b_c_id=c.c_id and b.b_type='信用卡' group by c.c_id;
+
+create view touzishouyi as
+select ifnull(sum(p.pro_income),0) total_shouyi,p.pro_c_id from property as p group by p.pro_c_id;
+
+select c.c_id,c.c_name,ifnull((touzizonge.total_amount+chuxu.total_chuxu-xinyong.total_xinyong+touzishouyi.total_shouyi),0) total_property from ((((client as c left join touzizonge on c.c_id=touzizonge.c_id) left join chuxu on c.c_id=chuxu.c_id) left join xinyong on c.c_id=xinyong.c_id) left join touzishouyi on c.c_id=touzishouyi.pro_c_id) group by c.c_id;
+
+
+
+/*  end  of  your code  */ 

@@ -1,0 +1,25 @@
+ -- 12) 综合客户表(client)、资产表(property)、理财产品表(finances_product)、保险表(insurance)和
+ --     基金表(fund)，列出客户的名称、身份证号以及投资总金额（即投资本金，
+ --     每笔投资金额=商品数量*该产品每份金额)，注意投资金额按类型需要查询不同的表，
+ --     投资总金额是客户购买的各类资产(理财,保险,基金)投资金额的总和，总金额命名为total_amount。
+ --     查询结果按总金额降序排序。
+ -- 请用一条SQL语句实现该查询：
+
+
+create view licai as
+  select ifnull(sum(pro.pro_quantity*p.p_amount),0) as 理财,pro.pro_c_id from property as pro left join finances_product as p on p.p_id=pro.pro_pif_id and pro.pro_type=1 group by pro.pro_c_id;
+
+create view baoxian as
+  select ifnull(sum(pro.pro_quantity*i.i_amount),0) as 保险,pro.pro_c_id from property as pro left join insurance as i on i.i_id=pro.pro_pif_id and pro.pro_type=2 group by pro.pro_c_id;
+
+ create view jijin as
+  select ifnull(sum(pro.pro_quantity*f.f_amount),0) as 基金,pro.pro_c_id from property as pro left join fund as f on f.f_id=pro.pro_pif_id and pro.pro_type=3 group by pro.pro_c_id; 
+
+select c.c_name,c.c_id_card,ifnull(licai.理财+baoxian.保险+jijin.基金,0) total_amount from ((client as c left join licai on c.c_id=licai.pro_c_id) left join baoxian on licai.pro_c_id=baoxian.pro_c_id) left join jijin on baoxian.pro_c_id=jijin.pro_c_id order by total_amount desc;
+
+
+
+
+
+
+/*  end  of  your code  */ 
